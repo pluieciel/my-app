@@ -34,24 +34,25 @@
 	[aria-current]::after {
 		position: absolute;
 		content: '';
-		width: calc(100% - 1em);
-		height: 5px;
-		background-color: rgb(73, 72, 72);
+		width: calc(100% - 0.5em);
+		height: 2px;
+		background-color: rgb(212, 41, 41);
 		display: block;
 		bottom: -1px;
 	}
 
 	a {
 		text-decoration: none;
-		padding: 1em 0.5em;
+		margin: 0.5em 0.25em;
+		padding: 0.5em 0.25em;
 		display: block;
 	}
 </style>
 
-<nav>
+<nav class="bg-gray-100">
 	<ul class="flex flex-col">
-		<li class="hover:bg-gray-600"><a aria-current='{segment === undefined ? "page" : undefined}' href='.'>home</a></li>
-		<li class="hover:bg-gray-600"><a aria-current='{segment === "louvre" ? "page" : undefined}' href='louvre'>louvre</a></li>
+		<li><a class="hover:bg-red-200" aria-current='{segment === undefined ? "page" : undefined}' href='.'>home</a></li>
+		<li><a class="hover:bg-red-200" aria-current='{segment === "louvre" ? "page" : undefined}' href='louvre'>louvre</a></li>
 
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 		     the blog data when we hover over the link or tap it on a touchscreen -->
