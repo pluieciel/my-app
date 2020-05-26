@@ -14,11 +14,15 @@
 		box-sizing: border-box;
 	}
 </style>
-
+<!--
 <div class="flex">
-	<Nav {segment}/>
 
+	<Nav {segment}/>
+-->
 	<main>
 		<slot></slot>
 	</main>
-</div>
+
+
+<!--
+	</div> -->
