@@ -15,8 +15,10 @@
 	}
 </style>
 
-<Nav {segment}/>
+<div class="flex">
+	<Nav {segment}/>
 
-<main>
-	<slot></slot>
-</main>
+	<main>
+		<slot></slot>
+	</main>
+</div>
