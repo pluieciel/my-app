@@ -1,5 +1,11 @@
 <script>
 	export let segment;
+
+	import CustomButton from '../components/CustomButton.svelte';
+
+	function handleClick() {
+		alert('clicked');
+	}
 </script>
 
 <style>
@@ -53,7 +59,7 @@
 	<ul class="flex flex-col">
 		<li><a class="hover:bg-red-200" aria-current='{segment === undefined ? "page" : undefined}' href='.'>home</a></li>
 		<li><a class="hover:bg-red-200" aria-current='{segment === "louvre" ? "page" : undefined}' href='louvre'>louvre</a></li>
-
+		<li><CustomButton on:click={handleClick} text={"Louvre"}/></li>
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 		     the blog data when we hover over the link or tap it on a touchscreen -->
 		<!--
