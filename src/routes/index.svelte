@@ -1,4 +1,8 @@
+<script>
+	const layers = [0, 1, 2, 3, 4, 5, 6];
 
+	let y;
+</script>
 
 <style>
 h1, figure, p {
@@ -32,22 +36,23 @@ p {
 		font-size: 4em;
 	}
 }
+
+
 </style>
 
 <svelte:head>
-	<title>Sapper project template</title>
+	<title>Welcome to Paris</title>
 </svelte:head>
 
 
+<svelte:window bind:scrollY={y}/>
 
 
-<h1 class='bg-red-300 h-full p-20'>Great success!</h1>
+{#each [0, 1, 2, 3, 4, 5, 6] as layer}
+	<img
+		style="transform: translate(0,{-y * layer / (layers.length - 1)}px)"
+		src="{layer}.png"
+		alt="parallax layer {layer}"
+	>
+{/each}
 
-<figure class='border-solid border-4 border-gray-600 h-full p-64'>
-	<div class='flex justify-center  border-solid border-4 border-blue-600'>
-	<img alt='Success Kid' src='successkid.jpg'>
-	</div>
-	<figcaption>Have fun with Sapper!</figcaption>
-</figure>
-
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>

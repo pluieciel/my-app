@@ -4,7 +4,7 @@
 </script>
 
 
-<nav class="flex w-full z-40 fixed items-center justify-end p-2 pr-4 {y < 10 ? 'bg-gray-100' : ''}">
+<nav class="flex w-full z-40 fixed items-center justify-end p-2 pr-4 bg-gray-100 {y < 10 ? '' : 'opacity-75'}">
     
     <a href="/" class="font-medium hover:text-gray-600 text-sm">
     Home
