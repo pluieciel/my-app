@@ -1,7 +1,9 @@
 <script>
-	import Nav from '../components/Nav.svelte';
+	import Nav1 from '../components/Nav1.svelte';
 
-	export let segment;
+	//export let segment;
+	
+	let yy;
 </script>
 
 <style>
@@ -14,15 +16,13 @@
 		box-sizing: border-box;
 	}
 </style>
-<!--
-<div class="flex">
-
-	<Nav {segment}/>
--->
-	<main>
-		<slot></slot>
-	</main>
 
 
-<!--
-	</div> -->
+<svelte:window bind:scrollY={yy}/>
+
+<Nav1 y = {yy}/>
+
+<main>
+	<slot></slot>
+</main>
+
