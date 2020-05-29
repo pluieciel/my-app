@@ -9,9 +9,9 @@
 <style>
 	main {
 		position: relative;
-		max-width: 56em;
-		background-color: white;
-		padding: 2em;
+		
+		background-color: rgb(36, 30, 30);
+		padding: 0.01em;
 		margin: 0 auto;
 		box-sizing: border-box;
 	}

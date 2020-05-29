@@ -4,25 +4,36 @@
 </script>
 
 
-<nav class="flex w-full z-40 fixed items-center justify-end p-2 pr-4 bg-gray-100 {y < 10 ? '' : 'opacity-75'}">
-    
-    <a href="/" class="font-medium hover:text-gray-600 text-sm">
-    Home
-    </a>
+<nav class="flex w-full z-40 fixed items-center justify-between pr-4 bg-gray-800 {y < 10 ? '' : 'opacity-75'}">
+    <div></div>
 
-    <a href="/" class="font-medium hover:text-gray-600 text-sm pl-4">
-    Sites
-    </a>
+    <div class="flex items-center p-2">
+        <a href="/" class="flex hover:opacity-25">
+            <img class="w-4 " src="http://www.entypo.com/images/home.svg">
+            <p class="font-medium text-gray-300 text-sm ml-1">
+            Home
+            </p>
+        </a>
 
-    <a href="/" class="font-medium hover:text-gray-600 text-sm pl-4">
-    Resources
-    </a>
+        <a href="/" class="flex hover:opacity-25 ml-6">
+            <img class="w-4 " src="http://www.entypo.com/images/address.svg">
+            <p class="font-medium text-gray-300 text-sm ml-1">
+            Sites
+            </p>
+        </a>
 
-    <a href="/" class="font-medium hover:text-gray-600 text-sm pl-4">
-    FAQs
-    </a>
+        <a href="/" class="flex hover:opacity-25 ml-6">
+            <img class="w-4 " src="http://www.entypo.com/images/info-with-circle.svg">
+            <p class="font-medium text-gray-300 text-sm ml-1">
+            Practical
+            </p>
+        </a>
 
-    <a href="/" class="block px-4 py-2 mt-3 font-medium text-white bg-blue-500 rounded hover:bg-blue-700 md:ml-6 md:mt-0 text-sm leading-tight">
-    Get Started
-    </a>
+       
+
+        <a href="/" class="block px-4 py-2 mt-3 font-medium text-white bg-blue-500 rounded hover:bg-blue-700 md:ml-6 md:mt-0 text-sm leading-tight">
+        Get Started
+        </a>
+
+    </div>
 </nav>
