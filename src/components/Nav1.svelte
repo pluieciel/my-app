@@ -9,21 +9,21 @@
 
     <div class="flex items-center p-2">
         <a href="/" class="flex hover:opacity-25">
-            <img class="w-4 " src="http://www.entypo.com/images/home.svg">
+            <img class="w-4 " src="http://www.entypo.com/images/home.svg" alt="">
             <p class="font-medium text-gray-300 text-sm ml-1">
             Home
             </p>
         </a>
 
         <a href="/louvre" class="flex hover:opacity-25 ml-6">
-            <img class="w-4 " src="http://www.entypo.com/images/address.svg">
+            <img class="w-4 " src="http://www.entypo.com/images/address.svg" alt="">
             <p class="font-medium text-gray-300 text-sm ml-1">
             Sites
             </p>
         </a>
 
         <a href="/" class="flex hover:opacity-25 ml-6">
-            <img class="w-4 " src="http://www.entypo.com/images/info-with-circle.svg">
+            <img class="w-4 " src="http://www.entypo.com/images/info-with-circle.svg" alt="">
             <p class="font-medium text-gray-300 text-sm ml-1">
             Practical
             </p>
