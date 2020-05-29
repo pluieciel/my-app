@@ -15,7 +15,7 @@
             </p>
         </a>
 
-        <a href="/" class="flex hover:opacity-25 ml-6">
+        <a href="/louvre" class="flex hover:opacity-25 ml-6">
             <img class="w-4 " src="http://www.entypo.com/images/address.svg">
             <p class="font-medium text-gray-300 text-sm ml-1">
             Sites
