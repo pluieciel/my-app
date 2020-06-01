@@ -13,6 +13,10 @@
 	height:500px;
 }
 
+.mimg{
+	height:250px;
+	width:auto;
+}
 
 /* hover styles */
 .location-listing {
@@ -27,7 +31,8 @@
 .location-image img {
   filter: blur(0px);
   transition: filter 0.3s ease-in;
-  transform: scale(1.1);
+  
+  transition: transform .3s ease-in;
 }
 
 .location-title {
@@ -57,6 +62,7 @@
 
 .location-listing:hover .location-image img {
   filter: blur(2px);
+  transform: scale(1.1);
 }
 </style>
 
@@ -100,20 +106,90 @@
 									<a class="location-title" href="#">Arc de Triomphe</a>
 									<div class="location-image">
 										<a href="#">
-										<img class="object-cover w-full"
+										<img class="object-cover mimg"
 										src="Arc_de_Triomphe.jpg" 
 										alt=""></a>
 									</div>
-
 									</article>
-									<!--
+
+									<article class="location-listing">
+									<a class="location-title" href="#">Eiffel Tower</a>
+									<div class="location-image">
+										<a href="#">
+										<img class="object-cover mimg"
+										src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&w=1000&q=80" 
+										alt=""></a>
+									</div>
+									</article>
+
+									<article class="location-listing">
+									<a class="location-title" href="#">Louvre</a>
+									<div class="location-image">
+										<a href="#">
+										<img class="object-cover mimg"
+										src="https://images.unsplash.com/photo-1499634231146-3393ed854a33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
+										alt=""></a>
+									</div>
+									</article>
+
+									<article class="location-listing">
+									<a class="location-title" href="#">Notre Dame</a>
+									<div class="location-image">
+										<a href="#">
+										<img class="object-cover mimg"
+										src="https://images.unsplash.com/photo-1555397227-cbcbc55768de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
+										alt=""></a>
+									</div>
+									</article>
+
+									<article class="location-listing">
+									<a class="location-title" href="#">Opera</a>
+									<div class="location-image">
+										<a href="#">
+										<img class="object-cover mimg"
+										src="https://images.unsplash.com/photo-1590101996999-e2df75f826d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
+										alt=""></a>
+									</div>
+									</article>
+
+									<article class="location-listing">
+									<a class="location-title" href="#">Sacre Coeur</a>
+									<div class="location-image">
+										<a href="#">
+										<img class="object-cover mimg"
+										src="https://images.unsplash.com/photo-1568464864774-276f00277a4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
+										alt=""></a>
+									</div>
+									</article>
+
+									<article class="location-listing">
+									<a class="location-title" href="#">Jardin Louxembourg</a>
+									<div class="location-image">
+										<a href="#">
+										<img class="object-cover mimg"
+										src="jardin_louxembourg.jpg" 
+										alt=""></a>
+									</div>
+									</article>
+
+									<article class="location-listing">
+									<a class="location-title" href="#">Versailles</a>
+									<div class="location-image">
+										<a href="#">
+										<img class="object-cover mimg"
+										src="versailles.jpg" 
+										alt=""></a>
+									</div>
+									</article>
+
+									<!-- old ones
 									<div class="overflow-hidden">
 										<a href="Arc_de_Triomphe.jpg">
 										<img class="object-cover h-full transition duration-500 ease-in-out transform hover:scale-110" 
 										src="Arc_de_Triomphe.jpg" 
 										alt="" title="" /></a>
 									</div>
-									-->
+									
 									<div class="overflow-hidden">
 										<a href="effel_tower.jpg">
 										<img class="object-cover h-full transition duration-500 ease-in-out transform hover:scale-110"
@@ -156,6 +232,8 @@
 										src="versailles.jpg" 
 										alt="" title="" /></a>
 									</div>
+									-->
+
 								</div>
 								<a href="/" class="mt-10">
 									<button class="rounded bg-blue-600 hover:bg-blue-800 text-white p-2 pl-5 pr-5">Learn More</button>
