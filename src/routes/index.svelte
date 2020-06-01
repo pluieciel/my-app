@@ -10,10 +10,7 @@
 
 }
 
-.imghover:hover{
-	z-index: 50;
 
-}
 </style>
 
 <svelte:head>
@@ -51,28 +48,28 @@
 									<p class="text-white text-3xl">Top 8</p>
 								</header>
 								<div class="grid grid-cols-4">
-									<div class="imghover transition duration-500 ease-in-out transform hover:scale-110">
+									<div class="transition duration-500 ease-in-out transform hover:scale-110">
 										<a href="Arc_de_Triomphe.jpg"><img src="Arc_de_Triomphe.jpg" alt="" title="This right here is a caption." /></a>
 									</div>
-									<div class="imghover transition duration-500 ease-in-out transform hover:scale-110">
+									<div class="transition duration-500 ease-in-out transform hover:scale-110">
 										<a href="effel_tower.jpg"><img src="effel_tower.jpg" alt="" title="This right here is a caption." /></a>
 									</div>
-									<div class="imghover transition duration-500 ease-in-out transform hover:scale-110">
+									<div class="transition duration-500 ease-in-out transform hover:scale-110">
 										<a href="Louvre.jpg"><img src="Louvre.jpg" alt="" title="This right here is a caption." /></a>
 									</div>
-									<div class="imghover transition duration-500 ease-in-out transform hover:scale-110">
+									<div class="transition duration-500 ease-in-out transform hover:scale-110">
 										<a href="notre_dame.jpg"><img src="notre_dame.jpg" alt="" title="This right here is a caption." /></a>
 									</div>
-									<div class="imghover transition duration-500 ease-in-out transform hover:scale-110">
+									<div class="transition duration-500 ease-in-out transform hover:scale-110">
 										<a href="opera.jpg"><img src="opera.jpg" alt="" title="This right here is a caption." /></a>
 									</div>
-									<div class="imghover transition duration-500 ease-in-out transform hover:scale-110">
+									<div class="transition duration-500 ease-in-out transform hover:scale-110">
 										<a href="sacre_coeur.jpg"><img src="sacre_coeur.jpg" alt="" title="This right here is a caption." /></a>
 									</div>
-									<div class="imghover transition duration-500 ease-in-out transform hover:scale-110">
+									<div class="transition duration-500 ease-in-out transform hover:scale-110">
 										<a href="jardin_louxembourg.jpg"><img src="jardin_louxembourg.jpg" alt="" title="This right here is a caption." /></a>
 									</div>
-									<div class="imghover transition duration-500 ease-in-out transform hover:scale-110">
+									<div class="transition duration-500 ease-in-out transform hover:scale-110">
 										<a href="versailles.jpg"><img src="versailles.jpg" alt="" title="This right here is a caption." /></a>
 									</div>
 								</div>
