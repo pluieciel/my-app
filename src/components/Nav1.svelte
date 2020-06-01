@@ -37,10 +37,12 @@
         </a>
 
        
-
-        <a href="/" class="block px-4 py-2 mt-3 font-medium text-white bg-blue-500 rounded hover:bg-blue-700 md:ml-6 md:mt-0 text-sm leading-tight">
+        <p class="w-10">
+        
+        </p>
+        <!--a href="/" class="block px-4 py-2 mt-3 font-medium text-white bg-blue-500 rounded hover:bg-blue-700 md:ml-6 md:mt-0 text-sm leading-tight">
         Get Started
-        </a>
+        </a-->
 
     </div>
 </nav>
@@ -49,7 +51,7 @@
 on:mouseenter={handleMouseenter}
 on:mouseleave={handleMouseleave}>
     <div class="flex flex-col fixed z-40 mr-56 {x ? '' : 'hidden'} mt-10">
-        <div class="flex flex-col bg-gray-800 bg-opacity-75 p-2 rounded mr-56">
+        <div class="flex flex-col bg-gray-800 bg-opacity-75 p-2 rounded mr-32">
             <a href="/louvre" class="font-medium text-gray-300 text-sm m-2 hover:opacity-25">Louvre</a>
             <a href="/" class="font-medium text-gray-300 text-sm m-2 hover:opacity-25">Eiffel</a>
         </div>

@@ -48,29 +48,29 @@
 									<p class="text-white text-3xl">Top 8</p>
 								</header>
 								<div class="grid grid-cols-4">
-									<div class="transition duration-500 ease-in-out transform hover:scale-110">
-										<a href="Arc_de_Triomphe.jpg"><img src="Arc_de_Triomphe.jpg" alt="" title="This right here is a caption." /></a>
+									<div class="overflow-hidden">
+										<a href="Arc_de_Triomphe.jpg"><img class="transition duration-500 ease-in-out transform hover:scale-110" src="Arc_de_Triomphe.jpg" alt="" title="This right here is a caption." /></a>
 									</div>
-									<div class="transition duration-500 ease-in-out transform hover:scale-110">
-										<a href="effel_tower.jpg"><img src="effel_tower.jpg" alt="" title="This right here is a caption." /></a>
+									<div class="overflow-hidden">
+										<a href="effel_tower.jpg"><img class="transition duration-500 ease-in-out transform hover:scale-110" src="effel_tower.jpg" alt="" title="This right here is a caption." /></a>
 									</div>
-									<div class="transition duration-500 ease-in-out transform hover:scale-110">
-										<a href="Louvre.jpg"><img src="Louvre.jpg" alt="" title="This right here is a caption." /></a>
+									<div class="overflow-hidden">
+										<a href="Louvre.jpg"><img class="transition duration-500 ease-in-out transform hover:scale-110" src="Louvre.jpg" alt="" title="This right here is a caption." /></a>
 									</div>
-									<div class="transition duration-500 ease-in-out transform hover:scale-110">
-										<a href="notre_dame.jpg"><img src="notre_dame.jpg" alt="" title="This right here is a caption." /></a>
+									<div class="overflow-hidden">
+										<a href="notre_dame.jpg"><img class="transition duration-500 ease-in-out transform hover:scale-110" src="notre_dame.jpg" alt="" title="This right here is a caption." /></a>
 									</div>
-									<div class="transition duration-500 ease-in-out transform hover:scale-110">
-										<a href="opera.jpg"><img src="opera.jpg" alt="" title="This right here is a caption." /></a>
+									<div class="overflow-hidden">
+										<a href="opera.jpg"><img class="transition duration-500 ease-in-out transform hover:scale-110" src="opera.jpg" alt="" title="This right here is a caption." /></a>
 									</div>
-									<div class="transition duration-500 ease-in-out transform hover:scale-110">
-										<a href="sacre_coeur.jpg"><img src="sacre_coeur.jpg" alt="" title="This right here is a caption." /></a>
+									<div class="overflow-hidden">
+										<a href="sacre_coeur.jpg"><img class="transition duration-500 ease-in-out transform hover:scale-110" src="sacre_coeur.jpg" alt="" title="This right here is a caption." /></a>
 									</div>
-									<div class="transition duration-500 ease-in-out transform hover:scale-110">
-										<a href="jardin_louxembourg.jpg"><img src="jardin_louxembourg.jpg" alt="" title="This right here is a caption." /></a>
+									<div class="overflow-hidden">
+										<a href="jardin_louxembourg.jpg"><img class="transition duration-500 ease-in-out transform hover:scale-110" src="jardin_louxembourg.jpg" alt="" title="This right here is a caption." /></a>
 									</div>
-									<div class="transition duration-500 ease-in-out transform hover:scale-110">
-										<a href="versailles.jpg"><img src="versailles.jpg" alt="" title="This right here is a caption." /></a>
+									<div class="overflow-hidden">
+										<a href="versailles.jpg"><img class="transition duration-500 ease-in-out transform hover:scale-110" src="versailles.jpg" alt="" title="This right here is a caption." /></a>
 									</div>
 								</div>
 								<a href="/" class="mt-10">
