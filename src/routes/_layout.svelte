@@ -1,28 +1,20 @@
 <script>
-	import Nav1 from '../components/Nav1.svelte';
-
-	//export let segment;
-	
-	let yy;
+	import Nav from '../components/Nav.svelte';
+	export let segment;
 </script>
 
 <style>
 	main {
 		position: relative;
-		
-		background-color: rgb(36, 30, 30);
-		padding: 0.01em;
+		background-color: white;
+		padding: 0;
 		margin: 0 auto;
 		box-sizing: border-box;
 	}
 </style>
 
-
-<svelte:window bind:scrollY={yy}/>
-
-<Nav1 y = {yy}/>
+<Nav {segment}/>
 
 <main>
 	<slot></slot>
 </main>
-
