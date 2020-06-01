@@ -5,6 +5,14 @@
 	const handleMouseleave = () => x = false;
 </script>
 
+<style>
+.test{
+    border-style: solid;
+    border-width: 4px;
+    border-color: aqua;
+}
+</style>
+
 <nav class="flex w-full z-30 fixed items-center justify-between pr-4 bg-gray-800 {y < 10 ? '' : 'opacity-75'}">
     <div></div>
 
