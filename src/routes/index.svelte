@@ -13,6 +13,51 @@
 	height:500px;
 }
 
+
+/* hover styles */
+.location-listing {
+  position: relative;
+}
+
+.location-image {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.location-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+
+.location-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  background: rgba(90,0,10,0.4);
+  color: white;
+  
+  /* position the text in t’ middle*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-listing:hover .location-title {
+  opacity: 1;
+}
+
+.location-listing:hover .location-image img {
+  filter: blur(2px);
+}
 </style>
 
 <svelte:head>
@@ -50,12 +95,25 @@
 									<p class="text-white text-3xl">Top 8</p>
 								</header>
 								<div class="fixheight grid grid-cols-4 grid-rows-2">
+
+									<article class="location-listing">
+									<a class="location-title" href="#">Arc de Triomphe</a>
+									<div class="location-image">
+										<a href="#">
+										<img class="object-cover w-full"
+										src="Arc_de_Triomphe.jpg" 
+										alt=""></a>
+									</div>
+
+									</article>
+									<!--
 									<div class="overflow-hidden">
 										<a href="Arc_de_Triomphe.jpg">
 										<img class="object-cover h-full transition duration-500 ease-in-out transform hover:scale-110" 
 										src="Arc_de_Triomphe.jpg" 
 										alt="" title="" /></a>
 									</div>
+									-->
 									<div class="overflow-hidden">
 										<a href="effel_tower.jpg">
 										<img class="object-cover h-full transition duration-500 ease-in-out transform hover:scale-110"
