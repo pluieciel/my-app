@@ -50,10 +50,12 @@
 <div class="flex w-full justify-end"
 on:mouseenter={handleMouseenter}
 on:mouseleave={handleMouseleave}>
-    <div class="flex flex-col fixed z-40 mr-56 {x ? '' : 'hidden'} mt-10">
-        <div class="flex flex-col bg-gray-800 bg-opacity-75 p-2 rounded mr-32">
+    <div class="flex flex-col fixed z-40  {x ? '' : 'hidden'} mt-10">
+        <div class="flex flex-col bg-gray-800 bg-opacity-75 p-2 rounded mr-24">
+            <a href="/" class="font-medium text-gray-300 text-sm m-2 hover:opacity-25">Arc de Triomphe</a>
+            <a href="/" class="font-medium text-gray-300 text-sm m-2 hover:opacity-25">Tour Eiffel</a>
             <a href="/louvre" class="font-medium text-gray-300 text-sm m-2 hover:opacity-25">Louvre</a>
-            <a href="/" class="font-medium text-gray-300 text-sm m-2 hover:opacity-25">Eiffel</a>
+            <a href="/" class="font-medium text-gray-300 text-sm m-2 hover:opacity-25">Notre Dame</a>
         </div>
     </div>
 </div>
