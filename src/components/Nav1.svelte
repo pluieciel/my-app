@@ -49,7 +49,7 @@
 on:mouseenter={handleMouseenter}
 on:mouseleave={handleMouseleave}>
     <div class="flex flex-col fixed z-40 mr-56 {x ? '' : 'hidden'} mt-10">
-        <div class="flex flex-col bg-gray-800 bg-opacity-75 p-2 rounded">
+        <div class="flex flex-col bg-gray-800 bg-opacity-75 p-2 rounded mr-56">
             <a href="/louvre" class="font-medium text-gray-300 text-sm m-2 hover:opacity-25">Louvre</a>
             <a href="/" class="font-medium text-gray-300 text-sm m-2 hover:opacity-25">Eiffel</a>
         </div>
