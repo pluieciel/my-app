@@ -4,20 +4,23 @@
 
 <style>
 	button {
-		height: 4rem;
+		height: 3rem;
 		width: 8rem;
-		background-color: #aaa;
-		border-color: #f1c40f;
-		color: #f1c40f;
+		background-color: black;
+		border-color: white;
+		border-style: solid;
+		border-width: 4px;
+		color: white;
 		font-size: 1.25rem;
-		background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+		background-image: linear-gradient(45deg, white 50%, transparent 50%);
 		background-position: 100%;
 		background-size: 400%;
 		transition: background 300ms ease-in-out;
 	}
 	button:hover {
 		background-position: 0;
-		color: #aaa;
+		color: black;
+		font-weight: bold;
 	}
 </style>
 
