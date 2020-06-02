@@ -1,5 +1,7 @@
 <script>
 	import CustomButton from '../components/CustomButton.svelte';
+	import * as animateScroll from "svelte-scrollto";
+
 </script>
 
 <style>
@@ -86,7 +88,7 @@
 							<p class="text-white text-6xl">Welcome to Paris</p>
 							<p class="text-white text-xl">A website give you the best navigation. </p>
 							
-							<a href="/" class="mt-10">
+							<a href='/' on:click={() => animateScroll.scrollTo({element: '#sites', duration: 2000})} class="mt-10">
 								<CustomButton text="Continue"/>
 							</a>
 						</div>
