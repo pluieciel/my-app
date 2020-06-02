@@ -4,12 +4,13 @@
 
 <style>
 	button {
-		height: 3rem;
-		width: 8rem;
+		height: 4rem;
+		width: 10rem;
 		background-color: black;
-		border-color: white;
+		border-radius: 4px;
+		border-color: rgba(144, 144, 144);
 		border-style: solid;
-		border-width: 4px;
+		border-width: 2px;
 		color: white;
 		font-size: 1.25rem;
 		background-image: linear-gradient(45deg, white 50%, transparent 50%);

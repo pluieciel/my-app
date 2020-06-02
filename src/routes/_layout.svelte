@@ -10,7 +10,7 @@
 	main {
 		position: relative;
 		
-		background-color: rgb(36, 30, 30);
+		background-color:#f7fafc;
 		padding: 0.01em;
 		margin: 0 auto;
 		box-sizing: border-box;
