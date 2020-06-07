@@ -5,12 +5,7 @@
 </script>
 
 <style>
-.test{
-	border-color: brown;
-	border-style: solid;
-	border-width: 4px;
 
-}
 .fixheight{
 	height:500px;
 }
@@ -105,9 +100,9 @@
 								<div class="fixheight grid grid-cols-4 grid-rows-2">
 
 									<article class="location-listing">
-									<a class="location-title" href="#">Arc de Triomphe</a>
+									<a class="location-title" href="/">Arc de Triomphe</a>
 									<div class="location-image">
-										<a href="#">
+										<a href="/">
 										<img class="object-cover mimg"
 										src="Arc_de_Triomphe.jpg" 
 										alt=""></a>
@@ -115,9 +110,9 @@
 									</article>
 
 									<article class="location-listing">
-									<a class="location-title" href="#">Eiffel Tower</a>
+									<a class="location-title" href="/">Eiffel Tower</a>
 									<div class="location-image">
-										<a href="#">
+										<a href="/">
 										<img class="object-cover mimg"
 										src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&w=1000&q=80" 
 										alt=""></a>
@@ -125,9 +120,9 @@
 									</article>
 
 									<article class="location-listing">
-									<a class="location-title" href="#">Louvre</a>
+									<a class="location-title" href="/">Louvre</a>
 									<div class="location-image">
-										<a href="#">
+										<a href="/">
 										<img class="object-cover mimg"
 										src="https://images.unsplash.com/photo-1499634231146-3393ed854a33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
 										alt=""></a>
@@ -135,9 +130,9 @@
 									</article>
 
 									<article class="location-listing">
-									<a class="location-title" href="#">Notre Dame</a>
+									<a class="location-title" href="/">Notre Dame</a>
 									<div class="location-image">
-										<a href="#">
+										<a href="/">
 										<img class="object-cover mimg"
 										src="https://images.unsplash.com/photo-1555397227-cbcbc55768de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
 										alt=""></a>
@@ -145,9 +140,9 @@
 									</article>
 
 									<article class="location-listing">
-									<a class="location-title" href="#">Opera</a>
+									<a class="location-title" href="/">Opera</a>
 									<div class="location-image">
-										<a href="#">
+										<a href="/">
 										<img class="object-cover mimg"
 										src="https://images.unsplash.com/photo-1590101996999-e2df75f826d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
 										alt=""></a>
@@ -155,9 +150,9 @@
 									</article>
 
 									<article class="location-listing">
-									<a class="location-title" href="#">Sacre Coeur</a>
+									<a class="location-title" href="/">Sacre Coeur</a>
 									<div class="location-image">
-										<a href="#">
+										<a href="/">
 										<img class="object-cover mimg"
 										src="https://images.unsplash.com/photo-1568464864774-276f00277a4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
 										alt=""></a>
@@ -165,9 +160,9 @@
 									</article>
 
 									<article class="location-listing">
-									<a class="location-title" href="#">Jardin Louxembourg</a>
+									<a class="location-title" href="/">Jardin Louxembourg</a>
 									<div class="location-image">
-										<a href="#">
+										<a href="/">
 										<img class="object-cover mimg"
 										src="jardin_louxembourg.jpg" 
 										alt=""></a>
@@ -175,9 +170,9 @@
 									</article>
 
 									<article class="location-listing">
-									<a class="location-title" href="#">Versailles</a>
+									<a class="location-title" href="/">Versailles</a>
 									<div class="location-image">
-										<a href="#">
+										<a href="/">
 										<img class="object-cover mimg"
 										src="versailles.jpg" 
 										alt=""></a>
