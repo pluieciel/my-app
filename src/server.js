@@ -10,7 +10,8 @@ const dev = NODE_ENV === 'development';
 const config = ini.parse(fs.readFileSync(__dirname+'/../../../secrets.ini', 'utf-8'));
 
 const app = express();
-
+const bodyParser = require("body-parser");
+const cors = require('cors')
 
 
 let str = "inimess";
@@ -27,6 +28,10 @@ app.use(express.json({
 	type: ['application/json', 'text/plain']
   }));
 app.use(express.urlencoded());
+app.use(bodyParser.json());
+app.use(cors());
+
+
 app.post('/submit-form', (req, res) => {
 	let data = req.body;
 	const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -43,8 +48,10 @@ app.post('/submit-form', (req, res) => {
 	});
 	res.end()
   });
-
-app.get('/message',function (req,res) {
+app.get("/test", (req, res) => {console.log("222");
+	res.send("hhhhh");
+});
+app.get('/messagedata',function (req,res) {
 	const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 	client.connect(err => {
 		if(err)console.log("Connection failed due to :", err);
@@ -74,3 +81,6 @@ app // You can also use Express
 	.listen(PORT, err => {
 		if (err) console.log('error', err);
 	});
+
+
+
