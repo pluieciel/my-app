@@ -15,7 +15,7 @@
 
 {#if messages}
 	<ul class="p-5">
-	{#each messages as {time, name, message }, i}
+	{#each messages.reverse() as {time, name, message}, i}
 		<li>
             <div class="w-1/2">
 			    {i + 1}: 
