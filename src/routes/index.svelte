@@ -124,9 +124,9 @@
 								<div class="fixheight grid grid-cols-4 grid-rows-2">
 
 									<article class="location-listing">
-									<a class="location-title" href="/">Arc de Triomphe</a>
+									<a class="location-title" href="/arc_de_triomphe">Arc de Triomphe</a>
 									<div class="location-image">
-										<a href="/">
+										<a href="/arc_de_triomphe">
 										<img class="object-cover mimg"
 										src="Arc_de_Triomphe.jpg" 
 										alt=""></a>

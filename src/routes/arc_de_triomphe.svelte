@@ -1,17 +1,48 @@
 <script>
+	import CustomButton from '../components/CustomButton.svelte';
 	import * as animateScroll from "svelte-scrollto";
+	
+	async function handleSubmit(event) {
+        
+        console.log(event.target.name.value);
+        console.log(event.target.email.value);
+		console.log(event.target.message.value);
+		fetch("/submit-form", {
+				method: "POST",
+				headers: {
+					
+					'Content-Type': 'application/json'
+				},
 
+				//make sure to serialize your JSON body
+				body: JSON.stringify({
+					"name": event.target.name.value,
+					"email": event.target.email.value,
+					"message":event.target.message.value,
+					"time":Date(Date.now())
+				})
+				})
+				.then( (response) => { 
+				//do something awesome that makes the world a better place
+				});
+    			}
 </script>
 
 <style>
-.test{
-	border-color: brown;
-	border-style: solid;
-	border-width: 4px;
 
-}
 .fixheight{
-	height:524px;
+	height:500px;
+}
+
+.bgheight{
+	height:550px;
+}
+.secheight{
+	height:400px;
+}
+
+.smheight{
+	height:320px;
 }
 
 .mimg{
@@ -68,8 +99,11 @@
 </style>
 
 <svelte:head>
-	<title>practical</title>
+	<title>Arc_de_Triomphe</title>
 </svelte:head>
+
+
+
 
 <body>
 	<div class="">
@@ -78,69 +112,78 @@
 			<section id="main" class="flex flex-col">
 
 				<!-- Banner -->
-					<div class="h-10"></div>
-					<section id="banner" class="flex flex-col justify-center items-center bg-black w-full h-64 pt-64 pb-64">
-						<div class="mt-24 flex flex-col justify-center items-center">
-							<p class="text-white text-6xl">Explore the Beauty of Paris</p>
-							<p class="text-white text-xl">The best choices for your traveling </p>
+					<header class=" bg-cover border-t-2 border-blue-600 bgheight" style="background-image: 
+					url('https://images.unsplash.com/photo-1496546591938-b3e0375d6d1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1058&q=80.jpg');">
+						<div class="body mt-64 mx-64">
+							<div class="md:flex items-center justify-center">
+                    			<div class="w-full" style="text-shadow: 0 20px 50px hsla(0,0%,0%,8);">
+                        			<h1 class="text-6xl font-bold text-white text-center">Arc de Triomphe</h1>
+									<h2 class="text-3xl font-bold text-white text-center">The Symbol of France</h2>
+					            </div>
+                            </div>
 						</div>
-						<ul class="mt-10 buttom-0 flex space-x-12 justify-center items-center">
-							<div class="container relative justify-center items-center">
-								<button type="button" class="absolute mt-16 mx-10 bg-white text-black rounded-sm hover:bg-white bg-white bg-opacity-75 py-1 inline-block items-center w-20 focus:shadow-outline focus:outline-none">
-									<a class="text-xl" on:click={() => animateScroll.scrollTo({element: '#map', duration: 2000})}>Map</a>
-								</button>								
-								<img src="map2.jpg" class="rounded-full h-40 w-40 buttom-0 border-solid border-white border-8">
-							    
+							
+					</header>
+				
+
+				<!-- Introduction -->
+					<section id="introduction" class="flex flex-col bg-gray-100 grid grid-cols-2 w-full secheight">
+
+						<!--photo-->
+							<div class="items-center row-span-1 col-span-1">
+								<img src="introduction3.jpg" class="w-full secheight" alt="intorduction">
 							</div>
-							<div class="container relative justify-center items-center">
-								<button type="button" class="absolute mt-16 mx-10 bg-white text-black rounded-sm hover:bg-white bg-white bg-opacity-75 py-1 inline-block items-center w-20 focus:shadow-outline focus:outline-none">
-						        	<a class="text-xl" href="https://www.ratp.fr/en/plan-metro">Metro</a>
-								</button>
-								<img src="metro.jpg" class="rounded-full border-solid border-white border-8 h-40 w-40 buttom-0">	
-	
-							</div>
-							<div class="container relative justify-center items-center">
-								<button type="button" class="absolute mt-16 mx-10 bg-white text-black rounded-sm hover:bg-white bg-white bg-opacity-75 py-1 inline-block items-center w-20 focus:shadow-outline focus:outline-none">
-						        	<a class="text-xl" href="https://www.komoot.com/guide/1525177/road-cycling-routes-around-paris">Bike</a>
-								</button>								
-								<img src="bike.jpg" class="rounded-full border-solid border-white border-8 h-40 w-40 buttom-0">		
-							</div>
-
-						</ul>
-
-					</section>
-
-				<!-- Map -->
-					<section id="map" class="flex flex-col p-10 bg-gray-100">
-
-						<!-- map -->
-							<div class="flex flex-col items-center">
+							<div class="row-span-1 col-span-1 items-center">
 								<header class="h-20 p-3">
-									<p class="text-black text-3xl">Map</p>
+									<p class="text-black text-2xl text-center font-semibold mt-4">Introduction</p>
 								</header>
-								<div class="fixheight grid grid-rows-1 grid-cols-3">
-									<div class="row-span-1 col-span-2 bg-white p-4">
-										<iframe src="https://www.google.com/maps/d/u/1/embed?mid=1nG_RSsx9qPV6amD6QXXoi4IZi-rQAjqH" width="800" height="486"></iframe>
-									</div>
+								<p class="text-black text-center px-10">
+                                	Stand on th top of the panoramic terrace and sweep over the whole of Paris.
+                        		</p>
 
-									<div class="row-span-1 col-span-1 bg-white items-center">
-										<p class="ml-4 mt-16 text-center text-2xl font-semibold">Top 1 City in the World</p>
-									    <p class="ml-4 mt-8 text-center text-xl font-medium">18 zones</p>
-										<p class="ml-4 mt-8 text-center text-xl font-medium">More than 2 million people</p>
-										<p class="ml-12 mr-8 mt-8 text-center text-base">Check out the main monuments, museums, squares, churches and attractions in our map of Paris.</p>
-										<p class="ml-12 mt-4 mr-8 text-center text-base">Click on each icon to see what it is.</p>
+								<p class="text-black text-center px-10 mt-8">
+                                	Inspired by the Roman Arch of Titus in a single arch, Architect Jean-François Chalgrin made the construction went beyond it by exceptional dimensions (about 50 m high, 45 m long and 22 m wide) and abandoning columns. 
+                        		</p>
 
-									</div>
+								<p class="text-black text-center px-10 mt-8">
+                                	Wanted by Napoleon in 1806, the Arc de Triomphe was inaugurated in 1836 by French king, Louis-Philippe, who dedicated it to the armies of the Revolution and the Empire. The Unknown Soldier was buried at the base of the arch in 1921. The flame of remembrance is rekindled every day at 18:30. 
+                        		</p>
 
-								</div>
-								<a href="/" class="mt-10">
-									<button class="rounded bg-blue-600 hover:bg-blue-800 text-white text-xl p-3 pl-10 pr-10">Learn More</button>
-								</a>
 							</div>
 					</section>
+
+				<!-- Time & ticket -->
+					<section id="time" class="flex flex-col bg-gray-100 grid grid-cols-2 w-full smheight">
+
+						<!--photo-->
+							<div class="row-span-1 col-span-1 items-center">
+								<header class="h-20 p-3">
+									<p class="text-black text-2xl text-center font-semibold mt-4">Time & Ticket</p>
+								</header>
+							</div>
+							<div class="items-center row-span-1 col-span-1">
+								<img src="time2.jpg" class="w-full secheight" alt="time">
+							</div>
+							
+					</section>
+
+				<!-- Transportation -->
+					<section id="transportation" class="flex flex-col bg-gray-100 grid grid-cols-2 w-full secheight">
+
+						<!--photo-->
+							<div class="items-center row-span-1 col-span-1">
+								<img src="metro3.jpg" class="w-full h-full" alt="transportation">
+							</div>
+							<div class="row-span-1 col-span-1 items-center">
+								<header class="h-20 p-3">
+									<p class="text-black text-2xl text-center font-semibold mt-4">Transportation</p>
+								</header>
+							</div>
+					</section>
+
 
 				<!-- Contact -->
-					<section id="contact2" class="mt-5 grid grid-cols-2 h-64">
+					<section id="contact" class="mt-5 grid grid-cols-2 h-64">
 						<!-- Social -->
 							<div class="flex flex-col bg-gray-300 p-10 text-gray-900">
 								<p class="font-bold text-xl mb-3">About Us</p>
@@ -191,7 +234,8 @@
 						<!-- Form -->
 							<div class="bg-gray-200 p-10 text-gray-900">
 								<p class="font-bold text-xl mb-3">Get in Touch</p>
-								<form action="#" method="post" class="grid grid-cols-2 gap-4">
+								<!--on:submit|preventDefault="{handleSubmit}" action="submit-form" method="POST"--> 
+								<form on:submit|preventDefault="{handleSubmit}" class="grid grid-cols-2 gap-4">
 									<div class="flex flex-col">
 										<label for="name" class="font-bold mb-3">Name</label>
 										<input name="name" id="name" type="text" placeholder=" Name"
