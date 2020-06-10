@@ -146,19 +146,24 @@
                         		</p>
 
 								<p class="text-black text-center px-10 mt-8">
-                                	Wanted by Napoleon in 1806, the Arc de Triomphe was inaugurated in 1836 by French king, Louis-Philippe, who dedicated it to the armies of the Revolution and the Empire. The Unknown Soldier was buried at the base of the arch in 1921. The flame of remembrance is rekindled every day at 18:30. 
+                                	Ordered by Napoleon in 1806, the Arc de Triomphe was completed in 1836 by French king, Louis-Philippe, who dedicated it to the armies of the Revolution and the Empire. The Unknown Soldier was buried at the base of the arch in 1921. The flame of remembrance is rekindled every day at 18:30. 
                         		</p>
 
 							</div>
 					</section>
 
-				<!-- Time & ticket -->
+				<!-- Time -->
 					<section id="time" class="flex flex-col bg-gray-100 grid grid-cols-2 w-full smheight">
 
 						<!--photo-->
 							<div class="row-span-1 col-span-1 items-center">
 								<header class="h-20 p-3">
-									<p class="text-black text-2xl text-center font-semibold mt-4">Time & Ticket</p>
+									<p class="text-black text-2xl text-center font-semibold mt-4">Time</p>
+									<p class="text-black px-10 text-xl font-semibold mt-2">CLOSING DAYS</p>
+									<p class="text-black px-10 mt-2">1 January, 1 May, 8May (morning), 14 July, 11 November (morning) and 25 December</p>
+									<p class="text-black px-10 text-xl font-semibold mt-8">OPENING TIMES</p>
+									<p class="text-black px-10 mt-2">24h, 7j/7</p>
+
 								</header>
 							</div>
 							<div class="items-center row-span-1 col-span-1">
@@ -167,17 +172,86 @@
 							
 					</section>
 
+				<!-- Price -->
+					<section id="price" class="flex flex-col bg-gray-100 grid grid-cols-2 w-full secheight">
+
+						<!--photo-->
+							<div class="items-center row-span-1 col-span-1">
+								<img src="price.jpg" class="w-full h-full" alt="price">
+							</div>
+							<div class="row-span-1 col-span-1 items-center">
+								<header class="h-20 p-3">
+									<p class="text-black text-2xl text-center font-semibold mt-4">Price</p>
+								</header>
+								<div class="px-10 mt-2 space-y-2">
+									<div class="flex">
+										<div class="w-1/2 text-black text-left text-xl font-semibold">
+											<span>INDIVIDUAL</span>
+										</div>
+										<div class="w-1/2 text-black text-right text-xl font-semibold">
+											<span>13€</span>
+										</div>
+									</div>
+									<div class="flex">
+										<div class="w-2/3 text-black text-left text-xl font-semibold space-x-1">
+											<span>GROUP PRICE</span> <span class="font-normal">(From 20 people)</span>
+										</div>
+										<div class="w-1/3 text-black text-right text-xl font-semibold">
+											<span>11€</span>
+										</div>
+									</div>
+									<div class="flex">
+										<div class="w-1/2 text-black text-left text-xl font-semibold">
+											<span>PRICE FOR SCHOOLS</span>
+										</div>
+										<div class="w-1/2 text-black text-right text-xl font-semibold">
+											<span>30€</span>
+										</div>
+									</div>
+									<div class="flex-cols">
+										<div class="text-black text-left text-xl font-semibold">
+											<span>FREE ADMISSION</span>
+										</div>
+										<ul class="mt-2 ml-8 list-disc">
+											<li>Less than 18 (with their family)</li>
+											<li>18-25 from the European Union or with a European visa</li>
+											<li>Disabled visitor and one accompanying person</li>
+											<li>Job seekers (upon presentation of proof of less than 6 months)</li>
+											<li>Teachers holders of an Education Pass</li>
+										</ul>
+									</div>
+									
+
+								</div>
+
+<!--13€                            
+GROUP PRICE
+From 20 people
+
+11€
+PRICE FOR SCHOOLS
+30€
+FREE ADMISSION
+Less than 18 (with their family)
+18-25 from the European Union or with a European visa
+Disabled visitor and one accompanying person
+Job seekers (upon presentation of proof of less than 6 months)
+Teachers holders of an Education Pass-->
+
+							</div>
+					</section>
+
 				<!-- Transportation -->
 					<section id="transportation" class="flex flex-col bg-gray-100 grid grid-cols-2 w-full secheight">
 
 						<!--photo-->
-							<div class="items-center row-span-1 col-span-1">
-								<img src="metro3.jpg" class="w-full h-full" alt="transportation">
-							</div>
 							<div class="row-span-1 col-span-1 items-center">
 								<header class="h-20 p-3">
-									<p class="text-black text-2xl text-center font-semibold mt-4">Transportation</p>
+									<p class="text-black text-2xl text-center font-semibold mt-4">Access</p>
 								</header>
+							</div>
+							<div class="items-center row-span-1 col-span-1">
+								<img src="metro3.jpg" class="w-full h-full" alt="transportation">
 							</div>
 					</section>
 
