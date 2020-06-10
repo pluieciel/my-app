@@ -159,12 +159,14 @@
 							<div class="row-span-1 col-span-1 items-center">
 								<header class="h-20 p-3">
 									<p class="text-black text-2xl text-center font-semibold mt-4">Time</p>
-									<p class="text-black px-10 text-xl font-semibold mt-2">CLOSING DAYS</p>
-									<p class="text-black px-10 mt-2">1 January, 1 May, 8May (morning), 14 July, 11 November (morning) and 25 December</p>
-									<p class="text-black px-10 text-xl font-semibold mt-8">OPENING TIMES</p>
-									<p class="text-black px-10 mt-2">24h, 7j/7</p>
-
 								</header>
+								
+								<p class="text-black px-10 text-xl font-semibold mt-2">CLOSING DAYS</p>
+								<p class="text-black px-10 mt-2">1 January, 1 May, 8May (morning), 14 July, 11 November (morning) and 25 December</p>
+								<p class="text-black px-10 text-xl font-semibold mt-8">OPENING TIMES</p>
+								<p class="text-black px-10 mt-2">24h, 7j/7</p>
+
+								
 							</div>
 							<div class="items-center row-span-1 col-span-1">
 								<img src="time2.jpg" class="w-full secheight" alt="time">
@@ -224,19 +226,6 @@
 
 								</div>
 
-<!--13€                            
-GROUP PRICE
-From 20 people
-
-11€
-PRICE FOR SCHOOLS
-30€
-FREE ADMISSION
-Less than 18 (with their family)
-18-25 from the European Union or with a European visa
-Disabled visitor and one accompanying person
-Job seekers (upon presentation of proof of less than 6 months)
-Teachers holders of an Education Pass-->
 
 							</div>
 					</section>
@@ -249,6 +238,29 @@ Teachers holders of an Education Pass-->
 								<header class="h-20 p-3">
 									<p class="text-black text-2xl text-center font-semibold mt-4">Access</p>
 								</header>
+								<div class="px-10 mt-2 space-y-2">
+									<div class="flex">
+										<div id="address" class="w-2/5 text-black text-left">
+											<p class="text-xl font-semibold">ADDRESS</p>
+											<p class="font-normal mt-2">Arc de Triomphe</p>
+											<p class="font-normal">Place Charles-de-Gaulle</p>
+											<p class="font-normal">75008 Paris</p>
+											<p class="text-xl font-semibold mt-8">PHONE & FAX</p>
+											<p class="font-normal mt-2">Ph. : 33 / (0)1 55 37 73 77</p>
+											<p class="font-normal">Fax : 33 / (0)1 44 95 02 13</p>
+										</div>
+										<div id="way" class="w-3/5 text-black text-left pl-4 border-l-4 border-orange-700">
+											<p class="text-xl font-semibold">BY SUBWAY</p>
+											<p class="font-normal">lines 1, 2 et 6, stop Charles-de-Gaulle-Etoile</p>
+											<p class="text-xl font-semibold mt-2">BY RER</p>
+											<p class="font-normal">line A, stop Charles-de-Gaulle-Etoile</p>
+											<p class="text-xl font-semibold mt-2">BY BUS</p>
+											<p class="font-normal">lines 22, 30, 31, 52, 73, 92 and Balabus</p>
+											<p class="text-xl font-semibold mt-2">BY CAR</p>
+											<p class="font-normal">From suburb : stop Porte Maillot and avenue de la Grande Armée or exit Porte Dauphine and avenue Foch. From Paris downtown : drive down Champs Elysées.</p>
+										</div>
+									</div>
+								</div>
 							</div>
 							<div class="items-center row-span-1 col-span-1">
 								<img src="metro3.jpg" class="w-full h-full" alt="transportation">
