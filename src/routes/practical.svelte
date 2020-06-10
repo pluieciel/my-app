@@ -133,7 +133,7 @@
 									</div>
 
 								</div>
-								<a href="/" class="mt-10">
+								<a href="/louvre" class="mt-10">
 									<button class="rounded bg-blue-600 hover:bg-blue-800 text-white text-xl p-3 pl-10 pr-10">Learn More</button>
 								</a>
 							</div>

@@ -60,7 +60,7 @@ on:mouseleave={handleMouseleave}>
     <div class="flex flex-col fixed z-40  {x ? '' : 'hidden'} mt-10">
         <div class="flex flex-col bg-gray-800 bg-opacity-75 p-2 rounded mr-56">
             <a href="/arc_de_triomphe" class="font-medium text-gray-300 text-sm m-2 hover:opacity-25">Arc de Triomphe</a>
-            <a href="/effel_tower" class="font-medium text-gray-300 text-sm m-2 hover:opacity-25">Tour Eiffel</a>
+            <a href="/eiffel_tower" class="font-medium text-gray-300 text-sm m-2 hover:opacity-25">Tour Eiffel</a>
             <a href="/louvre" class="font-medium text-gray-300 text-sm m-2 hover:opacity-25">Louvre</a>
             <a href="/notre_dame" class="font-medium text-gray-300 text-sm m-2 hover:opacity-25">Notre Dame</a>
         </div>

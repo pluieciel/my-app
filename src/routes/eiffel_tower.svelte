@@ -34,6 +34,17 @@
 	height:500px;
 }
 
+.bgheight{
+	height:550px;
+}
+.secheight{
+	height:400px;
+}
+
+.smheight{
+	height:320px;
+}
+
 .mimg{
 	height:250px;
 	width:auto;
@@ -88,7 +99,7 @@
 </style>
 
 <svelte:head>
-	<title>Travel to Paris</title>
+	<title>eiffel_tower</title>
 </svelte:head>
 
 
@@ -101,166 +112,162 @@
 			<section id="main" class="flex flex-col">
 
 				<!-- Banner -->
-					<div class="h-10"></div>
-					<section id="banner" class="flex flex-col justify-center items-center bg-black w-full h-64 pt-64 pb-64">
-						<div class="flex flex-col justify-center items-center">
-							<p class="text-white text-6xl">Welcome to Paris</p>
-							<p class="text-white text-xl">A website give you the best navigation. </p>
-							
-							<a href='/' on:click={() => animateScroll.scrollTo({element: '#sites', duration: 2000})} class="mt-10">
-								<CustomButton text="Continue"/>
-							</a>
+					<header class=" bg-cover border-t-2 border-blue-600 bgheight" style="background-image: 
+					url('https://images.unsplash.com/photo-1551519642-3a26558be311?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');">
+						<div class="body mt-64 mx-64">
+							<div class="md:flex items-center justify-center">
+                    			<div class="w-full" style="text-shadow: 0 20px 50px hsla(0,0%,0%,8);">
+                        			<h1 class="text-6xl font-bold text-white text-center">Tour Eiffel</h1>
+									<h2 class="text-3xl font-bold text-white text-center">The Most Visited Monument in the World</h2>
+					            </div>
+                            </div>
 						</div>
-					</section>
+							
+					</header>
+				
 
-				<!-- Site -->
-					<section id="sites" class="flex flex-col p-10 bg-gray-100">
+				<!-- Introduction -->
+					<section id="introduction" class="flex flex-col bg-gray-100 grid grid-cols-2 w-full secheight">
 
-						<!-- Photo Galleries -->
-							<div class="flex flex-col items-center">
+						<!--photo-->
+							<div class="items-center row-span-1 col-span-1">
+								<img src="introduction3.jpg" class="w-full secheight" alt="intorduction">
+							</div>
+							<div class="row-span-1 col-span-1 items-center">
 								<header class="h-20 p-3">
-									<p class="text-black text-3xl">Top 8</p>
+									<p class="text-black text-2xl text-center font-semibold mt-4">Introduction</p>
 								</header>
-								<div class="fixheight grid grid-cols-4 grid-rows-2">
+								<p class="text-black text-center px-10">
+                                	The Eiffel Tower was built by Gustave Eiffel for the 1889 Exposition Universelle, which was to celebrate the 100th year anniversary of the French Revolution.
+                        		</p>
 
-									<article class="location-listing">
-									<a class="location-title" href="/arc_de_triomphe">Arc de Triomphe</a>
-									<div class="location-image">
-										<a href="/arc_de_triomphe">
-										<img class="object-cover mimg"
-										src="Arc_de_Triomphe.jpg" 
-										alt=""></a>
-									</div>
-									</article>
+								<p class="text-black text-center px-10 mt-8">
+                                	The tower was planned up to a height of 300 metres - equivalent to the symbolic figure of 1000 feet.All the elements were prepared in Eiffel’s factory located near Paris. Each of the 18,000 pieces used to construct the Tower were specifically designed and calculated. 
+                        		</p>
 
-									<article class="location-listing">
-									<a class="location-title" href="/eiffel_tower">Eiffel Tower</a>
-									<div class="location-image">
-										<a href="/eiffel_tower">
-										<img class="object-cover mimg"
-										src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&w=1000&q=80" 
-										alt=""></a>
-									</div>
-									</article>
+								<p class="text-black text-center px-10 mt-8">
+                                	Since the 1980s, the monument has regularly been renovated, restored and adapted for an ever-growing public. As France’s symbol in the world, and the showcase of Paris, the tower welcomes almost 7 million visitors a year
+                        		</p>
 
-									<article class="location-listing">
-									<a class="location-title" href="/louvre">Louvre</a>
-									<div class="location-image">
-										<a href="/louvre">
-										<img class="object-cover mimg"
-										src="https://images.unsplash.com/photo-1499634231146-3393ed854a33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
-										alt=""></a>
-									</div>
-									</article>
-
-									<article class="location-listing">
-									<a class="location-title" href="/notre_dame">Notre Dame</a>
-									<div class="location-image">
-										<a href="/notre_dame">
-										<img class="object-cover mimg"
-										src="https://images.unsplash.com/photo-1555397227-cbcbc55768de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
-										alt=""></a>
-									</div>
-									</article>
-
-									<article class="location-listing">
-									<a class="location-title" href="/">Opera</a>
-									<div class="location-image">
-										<a href="/">
-										<img class="object-cover mimg"
-										src="https://images.unsplash.com/photo-1590101996999-e2df75f826d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
-										alt=""></a>
-									</div>
-									</article>
-
-									<article class="location-listing">
-									<a class="location-title" href="/">Sacre Coeur</a>
-									<div class="location-image">
-										<a href="/">
-										<img class="object-cover mimg"
-										src="https://images.unsplash.com/photo-1568464864774-276f00277a4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
-										alt=""></a>
-									</div>
-									</article>
-
-									<article class="location-listing">
-									<a class="location-title" href="/">Jardin Louxembourg</a>
-									<div class="location-image">
-										<a href="/">
-										<img class="object-cover mimg"
-										src="jardin_louxembourg.jpg" 
-										alt=""></a>
-									</div>
-									</article>
-
-									<article class="location-listing">
-									<a class="location-title" href="/">Versailles</a>
-									<div class="location-image">
-										<a href="/">
-										<img class="object-cover mimg"
-										src="versailles.jpg" 
-										alt=""></a>
-									</div>
-									</article>
-
-									<!-- old ones
-									<div class="overflow-hidden">
-										<a href="Arc_de_Triomphe.jpg">
-										<img class="object-cover h-full transition duration-500 ease-in-out transform hover:scale-110" 
-										src="Arc_de_Triomphe.jpg" 
-										alt="" title="" /></a>
-									</div>
-									
-									<div class="overflow-hidden">
-										<a href="effel_tower.jpg">
-										<img class="object-cover h-full transition duration-500 ease-in-out transform hover:scale-110"
-										src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&w=1000&q=80"
-										alt="" title="" /></a>
-									</div>
-									<div class="overflow-hidden">
-										<a href="Louvre.jpg">
-										<img class="object-cover h-full transition duration-500 ease-in-out transform hover:scale-110" 
-										src="https://images.unsplash.com/photo-1499634231146-3393ed854a33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
-										alt="" title="" /></a>
-									</div>
-									<div class="overflow-hidden">
-										<a href="notre_dame.jpg">
-										<img class="object-cover h-full transition duration-500 ease-in-out transform hover:scale-110" 
-										src="https://images.unsplash.com/photo-1555397227-cbcbc55768de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
-										alt="" title="" /></a>
-									</div>
-									<div class="overflow-hidden">
-										<a href="opera.jpg">
-										<img class="object-cover h-full transition duration-500 ease-in-out transform hover:scale-110" 
-										src="https://images.unsplash.com/photo-1590101996999-e2df75f826d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
-										alt="" title="" /></a>
-									</div>
-									<div class="overflow-hidden">
-										<a href="sacre_coeur.jpg">
-										<img class="object-cover w-full transition duration-500 ease-in-out transform hover:scale-110" 
-										src="sacre_coeur.jpg" 
-										alt="" title="" /></a>
-									</div>
-									<div class="overflow-hidden">
-										<a href="jardin_louxembourg.jpg">
-										<img class="object-cover h-full transition duration-500 ease-in-out transform hover:scale-110" 
-										src="jardin_louxembourg.jpg" 
-										alt="" title="" /></a>
-									</div>
-									<div class="overflow-hidden">
-										<a href="versailles.jpg">
-										<img class="object-cover h-full transition duration-500 ease-in-out transform hover:scale-110" 
-										src="versailles.jpg" 
-										alt="" title="" /></a>
-									</div>
-									-->
-
-								</div>
-								<a href="/arc_de_triomphe" class="mt-10">
-									<button class="rounded bg-blue-600 hover:bg-blue-800 text-white text-xl p-3 pl-10 pr-10">Learn More</button>
-								</a>
 							</div>
 					</section>
+
+				<!-- Time -->
+					<section id="time" class="flex flex-col bg-gray-100 grid grid-cols-2 w-full smheight">
+
+						<!--photo-->
+							<div class="row-span-1 col-span-1 items-center">
+								<header class="h-20 p-3">
+									<p class="text-black text-2xl text-center font-semibold mt-4">Time</p>
+								</header>
+								
+								<p class="text-black px-10 text-xl font-semibold mt-2">CLOSING DAYS</p>
+								<p class="text-black px-10 mt-2">Closed before 25 June, 2020</p>
+								<p class="text-black px-10 text-xl font-semibold mt-8">OPENING TIMES</p>
+								<p class="text-black px-10 mt-2">24h, 7j/7</p>
+
+								
+							</div>
+							<div class="items-center row-span-1 col-span-1">
+								<img src="time2.jpg" class="w-full secheight" alt="time">
+							</div>
+							
+					</section>
+
+				<!-- Price -->
+					<section id="price" class="flex flex-col bg-gray-100 grid grid-cols-2 w-full secheight">
+
+						<!--photo-->
+							<div class="items-center row-span-1 col-span-1">
+								<img src="price.jpg" class="w-full h-full" alt="price">
+							</div>
+							<div class="row-span-1 col-span-1 items-center">
+								<header class="h-20 p-3">
+									<p class="text-black text-2xl text-center font-semibold mt-4">Price</p>
+								</header>
+								<div class="px-10 mt-2 space-y-2">
+									<div class="flex">
+										<div class="w-1/2 text-black text-left text-xl font-semibold">
+											<span>ADULT RATE</span>
+										</div>
+										<div class="w-1/2 text-black text-right text-xl font-semibold">
+											<span>10.4€</span>
+										</div>
+									</div>
+									<div class="flex">
+										<div class="w-2/3 text-black text-left text-xl font-semibold space-x-1">
+											<span>YOUTH RATE</span> <span class="font-normal">(aged 12-24)</span>
+										</div>
+										<div class="w-1/3 text-black text-right text-xl font-semibold">
+											<span>5.2€</span>
+										</div>
+									</div>
+									<div class="flex">
+										<div class="w-2/3 text-black text-left text-xl font-semibold space-x-1">
+											<span>CHILD RATE</span> <span class="font-normal">(aged 4-11)</span><span>/DISABLED</span>										</div>
+										<div class="w-1/3 text-black text-right text-xl font-semibold">
+											<span>2.6€</span>
+										</div>
+									</div>
+									<div class="flex">
+										<div class="w-2/3 text-black text-left text-xl font-semibold space-x-1">
+											<span>CHILD UNDER 4 RATE</span><span class="font-normal">(under 4)</span>
+										</div>
+										<div class="w-1/3 text-black text-right text-xl font-semibold">
+											<span>FREE</span>
+										</div>
+									</div>
+									<div class="flex">
+										<div class="text-black text-left font-normal space-x-1 mt-4">
+											<span>P.S. The prices are Tickets with access stairs</span><span class="text-red-600 font-semibold">Second floor</span>
+										</div>
+									</div>
+									<a href="https://www.toureiffel.paris/en/rates-opening-times" class="text-blue-800 underline font-semibold">-> To know more about the price with access lift</a>
+
+
+								</div>
+
+
+							</div>
+					</section>
+
+				<!-- Transportation -->
+					<section id="transportation" class="flex flex-col bg-gray-100 grid grid-cols-2 w-full secheight">
+
+						<!--photo-->
+							<div class="row-span-1 col-span-1 items-center">
+								<header class="h-20 p-3">
+									<p class="text-black text-2xl text-center font-semibold mt-4">Access</p>
+								</header>
+								<div class="px-10 mt-2 space-y-2">
+									<div class="flex">
+										<div id="address" class="w-2/5 text-black text-left">
+											<p class="text-xl font-semibold">ADDRESS</p>
+											<p class="font-normal mt-2">Tour Eiffel</p>
+											<p class="font-normal">Champ de Mars, 5 Avenue Anatole France,</p>
+											<p class="font-normal">75007 Paris</p>
+											<p class="text-xl font-semibold mt-8">CONTACT</p>
+											<p class="font-normal mt-2">Ph. : +33 (0)8 92 70 12 39</p>
+											<p class="font-normal">Monday to Saturday from 9:00am to 7:00pm, Sunday from 9:00am to 4:00pm</p>
+										</div>
+										<div id="way" class="w-3/5 text-black text-left pl-4 border-l-4 border-orange-700">
+											<p class="text-xl font-semibold">BY SUBWAY</p>
+											<p class="font-normal">lines 9 (Trodacero), 8 (Bir-hakeim) and 6 (Ecole-militaire)</p>
+											<p class="text-xl font-semibold mt-2">BY RER</p>
+											<p class="font-normal">line c, stop Champs de mars-Tour Eiffel</p>
+											<p class="text-xl font-semibold mt-2">BY BUS</p>
+											<p class="font-normal">lines 82, 30, 42, 72, stope Tour Eiffel</p>
+											<p class="text-xl font-semibold mt-2">BY CAR</p>
+											<p class="font-normal"> we suggest you park in one of the car parks close to the tower such as the quai Branly less than 300 metres from the Tower! !</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="items-center row-span-1 col-span-1">
+								<img src="metro3.jpg" class="w-full h-full" alt="transportation">
+							</div>
+					</section>
+
 
 				<!-- Contact -->
 					<section id="contact" class="mt-5 grid grid-cols-2 h-64">

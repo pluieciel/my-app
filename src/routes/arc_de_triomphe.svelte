@@ -245,7 +245,7 @@
 											<p class="font-normal mt-2">Arc de Triomphe</p>
 											<p class="font-normal">Place Charles-de-Gaulle</p>
 											<p class="font-normal">75008 Paris</p>
-											<p class="text-xl font-semibold mt-8">PHONE & FAX</p>
+											<p class="text-xl font-semibold mt-8">CONTACT</p>
 											<p class="font-normal mt-2">Ph. : 33 / (0)1 55 37 73 77</p>
 											<p class="font-normal">Fax : 33 / (0)1 44 95 02 13</p>
 										</div>
