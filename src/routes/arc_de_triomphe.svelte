@@ -117,7 +117,7 @@
 						<div class="body mt-64 mx-64">
 							<div class="md:flex items-center justify-center">
                     			<div class="w-full" style="text-shadow: 0 20px 50px hsla(0,0%,0%,8);">
-                        			<h1 class="text-6xl font-bold text-white text-center">Arc de Triomphe</h1>
+                        			<h1 class="md:text-6xl text-3xl font-bold text-white text-center">Arc de Triomphe</h1>
 									<h2 class="text-3xl font-bold text-white text-center">The Symbol of France</h2>
 					            </div>
                             </div>
@@ -269,9 +269,9 @@
 
 
 				<!-- Contact -->
-					<section id="contact" class="mt-5 grid grid-cols-2 h-64">
+					<section id="contact" class="mt-5 grid md:grid-cols-2 grid-cols-1 h-64">
 						<!-- Social -->
-							<div class="flex flex-col bg-gray-300 p-10 text-gray-900">
+							<div class="flex flex-col bg-gray-300 p-10 text-gray-900 md:row-start-1 row-start-2">
 								<p class="font-bold text-xl mb-3">About Us</p>
 								<div class='space-y-2'>
 									<p>We are 4 ESSEC students.</p>
@@ -318,7 +318,7 @@
 							</div>
 
 						<!-- Form -->
-							<div class="bg-gray-200 p-10 text-gray-900">
+							<div class="bg-gray-200 p-10 text-gray-900 row-start-1"></div>
 								<p class="font-bold text-xl mb-3">Get in Touch</p>
 								<!--on:submit|preventDefault="{handleSubmit}" action="submit-form" method="POST"--> 
 								<form on:submit|preventDefault="{handleSubmit}" class="grid grid-cols-2 gap-4">
@@ -335,7 +335,7 @@
 									<div class="flex flex-col col-span-2">
 										<label for="message"  class="font-bold mb-3">Message</label>
 										<textarea name="message" id="message" rows="6" placeholder=" Message"
-										    class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"></textarea>
+										    class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline md:h-24 h-16"></textarea>
 									</div>
 									<ul class="actions">
 										<li><input value="Send Message" 
