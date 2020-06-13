@@ -11,7 +11,7 @@
 </style>
 
 
-<a href="/" on:click|preventDefault={toggleActive} class="m-2 w-8 h-8 fixed z-30 bg-gray-800 opacity-75">
+<a href="/" on:click|preventDefault={toggleActive} class="m-2 w-8 h-8 fixed z-30 bg-gray-800 opacity-75 rounded">
     <img src="http://www.entypo.com/images/menu.svg" alt="">
 </a>
 
