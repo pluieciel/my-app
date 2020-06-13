@@ -4,6 +4,12 @@
     function toggleActive() {
     show = !show
     }
+
+    let show2=false;
+
+    function toggleActive2() {
+    show2 = !show2
+    }
 </script>
 
 <style>
@@ -26,7 +32,7 @@
             </p>
         </a>
 
-        <a href="/" class="flex hover:opacity-25 pt-3 pb-3">
+        <a href="/" on:click|preventDefault={toggleActive2} class="flex hover:opacity-25 pt-3 pb-3">
       
             <img class="w-4" src="http://www.entypo.com/images/address.svg" alt="">
             <p class="font-medium text-gray-300 text-sm ml-1">
@@ -59,3 +65,14 @@
     </div>
 </nav>
 
+<div class="{show2 ? 'block' : 'hidden'} flex w-full">
+
+    <div class="flex flex-col fixed z-20 mt-10">
+        <div class="flex flex-col bg-gray-800 bg-opacity-75 p-2 rounded ml-32">
+            <a href="/arc_de_triomphe" class="font-medium text-gray-300 text-sm m-2 hover:opacity-25">Arc de Triomphe</a>
+            <a href="/eiffel_tower" class="font-medium text-gray-300 text-sm m-2 hover:opacity-25">Tour Eiffel</a>
+            <a href="/louvre" class="font-medium text-gray-300 text-sm m-2 hover:opacity-25">Louvre</a>
+            <a href="/notre_dame" class="font-medium text-gray-300 text-sm m-2 hover:opacity-25">Notre Dame</a>
+        </div>
+    </div>
+</div>
