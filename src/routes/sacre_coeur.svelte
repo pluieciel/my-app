@@ -99,7 +99,7 @@
 </style>
 
 <svelte:head>
-	<title>Opera</title>
+	<title>Sacre_Coeur</title>
 </svelte:head>
 
 
@@ -112,13 +112,13 @@
 			<section id="main" class="flex flex-col">
 
 				<!-- Banner -->
-					<header class=" bg-cover border-t-2 border-blue-600 bgheight" style="background-image: 
-					url('https://res.cloudinary.com/opera-national-de-paris/image/upload/c_crop%2Ch_2815%2Cw_5000%2Cx_0%2Cy_0/w_870/f_auto/v1/user_photos/najocddrarivc3uljafm');">
-						<div class="body mt-64 mx-64">
+					<header class=" bg-cover border-t-2 border-blue-600 md:bgheight" style="background-image: 
+					url('https://www.widewallpapershd.info/file/27266/1920x1080/crop/paris-france-montmartre-the-sacre-coeur.jpg');">
+						<div class="body md:mt-64 mt-24 md:mx-64 mx-4 md:mb-40 mb-24">
 							<div class="md:flex items-center justify-center">
                     			<div class="w-full" style="text-shadow: 0 20px 50px hsla(0,0%,0%,8);">
-                        			<h1 class="text-6xl font-bold text-white text-center">Opera</h1>
-									<h2 class="text-3xl font-bold text-white text-center">The Palace of Art</h2>
+                        			<h1 class="md:text-6xl text-3xl font-bold text-white text-center">Sacre Coeur</h1>
+									<h2 class="md:text-3xl text-lg font-bold text-white text-center">The Place of Pilgrimage</h2>
 					            </div>
                             </div>
 						</div>
@@ -127,95 +127,88 @@
 				
 
 				<!-- Introduction -->
-					<section id="introduction" class="flex flex-col bg-gray-100 grid grid-cols-2 w-full secheight">
+					<section id="introduction" class="flex flex-col bg-gray-100 grid md:grid-cols-2 grid-cols-1 w-full md:secheight h-auto">
 
 						<!--photo-->
-							<div class="items-center row-span-1 col-span-1">
+							<div class="items-center row-span-1 col-span-1 row-start-1">
 								<img src="introduction3.jpg" class="w-full secheight" alt="intorduction">
 							</div>
-							<div class="row-span-1 col-span-1 items-center">
+							<div class="row-span-1 col-span-1 items-center md:mb-0 mb-8 md:row-start-1 row-start-2">
 								<header class="h-20 p-3">
-									<p class="text-black text-2xl text-center font-semibold mt-4">Introduction</p>
+									<p class="text-black text-2xl text-center font-semibold mt-2">Introduction</p>
 								</header>
 								<p class="text-black text-center px-10">
-                                	Located in the Palais Garnier, the Opéra Garnier is an impressive Neo-Baroque building that together with the Bastille Opéra makes up the Paris Opera. This buildinginspired the famous novel by Gastón Leroux, The Phantom of the Opera.
+                                	The Basilica of the Sacred Heart of Paris, commonly known as Sacré-Cœur Basilica and often simply Sacré-Cœur, is a Roman Catholic church and minor basilica, dedicated to the Sacred Heart of Jesus, in Paris. 
                         		</p>
 
-								<p class="text-black text-center px-10 mt-8">
-                                	The Paris Opera is an imposing neobarroque-style building from the nineteenth century which has inspired several plays and books, including 'The Phantom of the Opera'. 
+								<p class="text-black text-center px-10 md:mt-8 mt-4">
+                                	A popular landmark and the second most visited monument in Paris,[1] the basilica stands at the summit of the butte Montmartre, the highest point in the city. 
                         		</p>
 
-								
+								<p class="text-black text-center px-10 md:mt-8 mt-4">
+                                	Sacré-Cœur Basilica is above all a religious (Catholic) building, shown by its perpetual adoration of the Holy Eucharist since 1885, and is also seen as a double monument, political and cultural. 
+                        		</p>
 
 							</div>
 					</section>
 
 				<!-- Time -->
-					<section id="time" class="flex flex-col bg-gray-100 grid grid-cols-2 w-full smheight">
+					<section id="time" class="flex flex-col bg-gray-100 grid md:grid-cols-2 grid-cols-1 w-full md:smheight h-auto">
 
-						<!--photo-->
-							<div class="row-span-1 col-span-1 items-center">
+							<div class="row-span-1 col-span-1 items-center md:row-start-1 row-start-2">
 								<header class="h-20 p-3">
 									<p class="text-black text-2xl text-center font-semibold mt-4">Time</p>
 								</header>
-								
-								<p class="text-black px-10 text-xl font-semibold mt-2">CLOSING DAYS</p>
-								<p class="text-black px-10 mt-2">1 January, 1 May, 8May (morning), 14 July, 11 November (morning) and 25 December</p>
-								<p class="text-black px-10 text-xl font-semibold mt-8">OPENING TIMES</p>
-								<p class="text-black px-10 mt-2">24h, 7j/7</p>
-
+								<p class="text-black px-10 text-xl font-semibold mt-2">BASILICA</p>
+								<p class="text-black px-10 mt-2">Every day from 6a.m. to 10.30p.m.</p>
+								<p class="text-black px-10 text-xl font-semibold mt-8">The DOME</p>
+								<p class="text-black px-10 mt-2 mt:mb-0 mb-8">Every day from 8.30a.m. to 8p.m. (May to September) and 9a.m. to 5p.m. (October to April).</p>
 								
 							</div>
-							<div class="items-center row-span-1 col-span-1">
-								<img src="time2.jpg" class="w-full secheight" alt="time">
+
+							<!--photo-->
+							<div class="items-center row-span-1 col-span-1 row-start-1">
+								<img src="time2.jpg" class="w-full md:secheight h-full" alt="time">
 							</div>
 							
 					</section>
 
 				<!-- Price -->
-					<section id="price" class="flex flex-col bg-gray-100 grid grid-cols-2 w-full secheight">
+					<section id="price" class="flex flex-col bg-gray-100 grid md:grid-cols-2 grid-cols-1 w-full md:secheight h-auto">
 
 						<!--photo-->
-							<div class="items-center row-span-1 col-span-1">
+							<div class="items-center row-span-1 col-span-1 row-start-1">
 								<img src="price.jpg" class="w-full h-full" alt="price">
 							</div>
-							<div class="row-span-1 col-span-1 items-center">
+							<div class="row-span-1 col-span-1 items-center md:row-start-1 row-start-2">
 								<header class="h-20 p-3">
 									<p class="text-black text-2xl text-center font-semibold mt-4">Price</p>
 								</header>
-								<div class="px-10 mt-2 space-y-2">
+								<div class="px-10 mt-2 space-y-2 md:mb-0 mb-4">
 									<div class="flex">
 										<div class="w-1/2 text-black text-left text-xl font-semibold">
-											<span>INDIVIDUAL</span>
+											<span>BASILICA</span>
 										</div>
 										<div class="w-1/2 text-black text-right text-xl font-semibold">
-											<span>14€</span>
+											<span>Free</span>
 										</div>
 									</div>
 									<div class="flex">
 										<div class="w-2/3 text-black text-left text-xl font-semibold space-x-1">
-											<span>GROUP PRICE</span> <span class="font-normal">(From 20 people)</span>
+											<span>THE DOME</span> <span class="font-normal"></span>
 										</div>
 										<div class="w-1/3 text-black text-right text-xl font-semibold">
-											<span>8€</span>
-										</div>
-									</div>
-									<div class="flex">
-										<div class="w-1/2 text-black text-left text-xl font-semibold">
-											<span>PRICE FOR SCHOOLS</span>
-										</div>
-										<div class="w-1/2 text-black text-right text-xl font-semibold">
-											<span>30€</span>
+											<span>Various rates</span>
 										</div>
 									</div>
 									<div class="flex-cols">
 										<div class="text-black text-left text-xl font-semibold">
-											<span>FREE ADMISSION</span>
+			                        
 										</div>
 										<ul class="mt-2 ml-8 list-disc">
-											<li>Children under 12 </li>
-											<li>Employed visitor</li>
-											
+											<li>Reservation is not needed for group visits.</li>
+											<li>The Bell Tower is not open to visitors.</li>
+                                            <li>A guidebook is available in several languages at the Basilica bookshop (closed on Mondays). Price 5 euros.</li>
 										</ul>
 									</div>
 									
@@ -227,10 +220,9 @@
 					</section>
 
 				<!-- Transportation -->
-					<section id="transportation" class="flex flex-col bg-gray-100 grid grid-cols-2 w-full secheight">
+					<section id="transportation" class="flex flex-col bg-gray-100 grid md:grid-cols-2 grid-cols-1 w-full md:secheight h-auto">
 
-						<!--photo-->
-							<div class="row-span-1 col-span-1 items-center">
+							<div class="row-span-1 col-span-1 items-center md:row-start-1 row-start-2">
 								<header class="h-20 p-3">
 									<p class="text-black text-2xl text-center font-semibold mt-4">Access</p>
 								</header>
@@ -238,34 +230,35 @@
 									<div class="flex">
 										<div id="address" class="w-2/5 text-black text-left">
 											<p class="text-xl font-semibold">ADDRESS</p>
-											<p class="font-normal mt-2">Opera National de Paris</p>
-											<p class="font-normal">Place de l’Opéra</p>
-											<p class="font-normal">75009 Paris</p>
+											<p class="font-normal mt-2">Sacré-Cœur</p>
+											<p class="font-normal">35, Rue du Chevalier de la Barre</p>
+											<p class="font-normal">75018 Paris</p>
 											<p class="text-xl font-semibold mt-8">CONTACT</p>
-											<p class="font-normal mt-2">Ph. : 33 / (0)1 71 25 24 23</p>
+											<p class="font-normal mt-2">Ph. : 33 / (0)1 53 41 89 00</p>
+											
 										</div>
 										<div id="way" class="w-3/5 text-black text-left pl-4 border-l-4 border-orange-700">
 											<p class="text-xl font-semibold">BY SUBWAY</p>
-											<p class="font-normal">lines 8,9, stop Opéra</p>
-											<p class="text-xl font-semibold mt-2">BY RER</p>
-											<p class="font-normal">line A, stop Auber</p>
+											<p class="font-normal">lines 2, 12, stop Pigalle</p>
 											<p class="text-xl font-semibold mt-2">BY BUS</p>
-											<p class="font-normal">lines N16, stop Opera</p>
+											<p class="font-normal">lines 30, 31, 80, 85, stop Anvers Sacré-Coeur</p>
 											
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="items-center row-span-1 col-span-1">
-								<img src="metro3.jpg" class="w-full h-full" alt="transportation">
+
+						<!--photo-->
+							<div class="items-center row-span-1 col-span-1 row-start-1">
+								<img src="metro3.jpg" class="w-full md:secheight h-full" alt="transportation">
 							</div>
 					</section>
 
 
 				<!-- Contact -->
-					<section id="contact" class="mt-5 grid grid-cols-2 h-64">
+					<section id="contact" class="mt-5 grid md:grid-cols-2 grid-cols-1 h-64">
 						<!-- Social -->
-							<div class="flex flex-col bg-gray-300 p-10 text-gray-900">
+							<div class="flex flex-col bg-gray-300 p-10 text-gray-900 md:row-start-1 row-start-2">
 								<p class="font-bold text-xl mb-3">About Us</p>
 								<div class='space-y-2'>
 									<p>We are 4 ESSEC students.</p>
@@ -312,7 +305,7 @@
 							</div>
 
 						<!-- Form -->
-							<div class="bg-gray-200 p-10 text-gray-900">
+							<div class="bg-gray-200 p-10 text-gray-900 row-start-1">
 								<p class="font-bold text-xl mb-3">Get in Touch</p>
 								<!--on:submit|preventDefault="{handleSubmit}" action="submit-form" method="POST"--> 
 								<form on:submit|preventDefault="{handleSubmit}" class="grid grid-cols-2 gap-4">

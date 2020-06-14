@@ -174,9 +174,9 @@
 									</article>
 
 									<article class="location-listing">
-									<a class="location-title" href="/">Sacre Coeur</a>
+									<a class="location-title" href="/sacre_coeur">Sacre Coeur</a>
 									<div class="location-image">
-										<a href="/">
+										<a href="/sacre_coeur">
 										<img class="object-cover mimg"
 										src="https://images.unsplash.com/photo-1568464864774-276f00277a4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
 										alt=""></a>
