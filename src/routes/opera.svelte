@@ -159,10 +159,10 @@
 									<p class="text-black text-2xl text-center font-semibold mt-4">Time</p>
 								</header>
 								
-								<p class="text-black px-10 text-xl font-semibold mt-2">CLOSING DAYS</p>
-								<p class="text-black px-10 mt-2">1 January, 1 May, 8May (morning), 14 July, 11 November (morning) and 25 December</p>
-								<p class="text-black px-10 text-xl font-semibold mt-8">OPENING TIMES</p>
-								<p class="text-black px-10 mt-2">24h, 7j/7</p>
+								<p class="text-black px-10 text-xl font-semibold mt-2">OPENING HOURS</p>
+								<p class="text-black px-10 mt-2">10 a.m. - 5 p.m. (6 p.m. from mid-July until early September). Closed during performances.</p>
+								<p class="text-black px-10 text-xl font-semibold mt-8">BOOK & GIFT SHOP</p>
+								<p class="text-black px-10 mt-2">From 10 a.m. to the end of performances. </p>
 
 								
 							</div>
