@@ -34,6 +34,17 @@
 	height:500px;
 }
 
+.bgheight{
+	height:550px;
+}
+.secheight{
+	height:400px;
+}
+
+.smheight{
+	height:320px;
+}
+
 .mimg{
 	height:250px;
 	width:auto;
@@ -88,7 +99,7 @@
 </style>
 
 <svelte:head>
-	<title>Travel to Paris</title>
+	<title>Jardin_du_Luxembourg</title>
 </svelte:head>
 
 
@@ -101,166 +112,140 @@
 			<section id="main" class="flex flex-col">
 
 				<!-- Banner -->
-					<div class="h-10"></div>
-					<section id="banner" class="flex flex-col justify-center items-center bg-black w-full h-64 pt-64 pb-64">
-						<div class="flex flex-col justify-center items-center">
-							<p class="text-white text-6xl">Welcome to Paris</p>
-							<p class="text-white text-xl">A website give you the best navigation. </p>
-							
-							<a href='/' on:click={() => animateScroll.scrollTo({element: '#sites', duration: 2000})} class="mt-10">
-								<CustomButton text="Continue"/>
-							</a>
+					<header class=" bg-cover border-t-2 border-blue-600 bgheight" style="background-image: 
+					url('https://www.sortiraparis.com/images/80/62403/349310-le-jardin-du-luxembourg-a-paris-un-chef-d-oeuvre-botanique-4.jpg');">
+						<div class="body mt-64 mx-64">
+							<div class="md:flex items-center justify-center">
+                    			<div class="w-full" style="text-shadow: 0 20px 50px hsla(0,0%,0%,8);">
+                        			<h1 class="text-6xl font-bold text-white text-center">Jardin du Luxembourg</h1>
+									<h2 class="text-3xl font-bold text-white text-center">The Green inside the city</h2>
+					            </div>
+                            </div>
 						</div>
-					</section>
+							
+					</header>
+				
 
-				<!-- Site -->
-					<section id="sites" class="flex flex-col p-10 bg-gray-100">
+				<!-- Introduction -->
+					<section id="introduction" class="flex flex-col bg-gray-100 grid grid-cols-2 w-full secheight">
 
-						<!-- Photo Galleries -->
-							<div class="flex flex-col items-center">
+						<!--photo-->
+							<div class="items-center row-span-1 col-span-1">
+								<img src="introduction3.jpg" class="w-full secheight" alt="intorduction">
+							</div>
+							<div class="row-span-1 col-span-1 items-center">
 								<header class="h-20 p-3">
-									<p class="text-black text-3xl">Top 8</p>
+									<p class="text-black text-2xl text-center font-semibold mt-4">Introduction</p>
 								</header>
-								<div class="fixheight grid grid-cols-4 grid-rows-2">
+								<p class="text-black text-center px-10">
+                                	The Jardin du Luxembourg is located in the 6th arrondissement of Paris, France. It was created beginning in 1612 by Marie de' Medici, the widow of King Henry IV of France, for a new residence she constructed, the Luxembourg Palace. 
+                        		</p>
 
-									<article class="location-listing">
-									<a class="location-title" href="/arc_de_triomphe">Arc de Triomphe</a>
-									<div class="location-image">
-										<a href="/arc_de_triomphe">
-										<img class="object-cover mimg"
-										src="Arc_de_Triomphe.jpg" 
-										alt=""></a>
-									</div>
-									</article>
+								<p class="text-black text-center px-10 mt-8">
+                                	The garden today is owned by the French Senate, which meets in the Palace. It covers 23 hectares and is known for its lawns, tree-lined promenades, flowerbeds, model sailboats on its circular basin, and picturesque Medici Fountain, built in 1620. 
+                        		</p>
 
-									<article class="location-listing">
-									<a class="location-title" href="/eiffel_tower">Eiffel Tower</a>
-									<div class="location-image">
-										<a href="/eiffel_tower">
-										<img class="object-cover mimg"
-										src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&w=1000&q=80" 
-										alt=""></a>
-									</div>
-									</article>
+								<p class="text-black text-center px-10 mt-8">
+                                	The name Luxembourg comes from the Latin Mons Lucotitius, the name of the hill where the garden is located.
+                        		</p>
 
-									<article class="location-listing">
-									<a class="location-title" href="/louvre">Louvre</a>
-									<div class="location-image">
-										<a href="/louvre">
-										<img class="object-cover mimg"
-										src="https://images.unsplash.com/photo-1499634231146-3393ed854a33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
-										alt=""></a>
-									</div>
-									</article>
-
-									<article class="location-listing">
-									<a class="location-title" href="/notre_dame">Notre Dame</a>
-									<div class="location-image">
-										<a href="/notre_dame">
-										<img class="object-cover mimg"
-										src="https://images.unsplash.com/photo-1555397227-cbcbc55768de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
-										alt=""></a>
-									</div>
-									</article>
-
-									<article class="location-listing">
-									<a class="location-title" href="/opera">Opera</a>
-									<div class="location-image">
-										<a href="/opera">
-										<img class="object-cover mimg"
-										src="https://images.unsplash.com/photo-1590101996999-e2df75f826d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
-										alt=""></a>
-									</div>
-									</article>
-
-									<article class="location-listing">
-									<a class="location-title" href="/sacre_coeur">Sacre Coeur</a>
-									<div class="location-image">
-										<a href="/sacre_coeur">
-										<img class="object-cover mimg"
-										src="https://images.unsplash.com/photo-1568464864774-276f00277a4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
-										alt=""></a>
-									</div>
-									</article>
-
-									<article class="location-listing">
-									<a class="location-title" href="/">Jardin Louxembourg</a>
-									<div class="location-image">
-										<a href="/Jardin_Luxembourg">
-										<img class="object-cover mimg"
-										src="jardin_louxembourg.jpg" 
-										alt=""></a>
-									</div>
-									</article>
-
-									<article class="location-listing">
-									<a class="location-title" href="/">Versailles</a>
-									<div class="location-image">
-										<a href="/">
-										<img class="object-cover mimg"
-										src="versailles.jpg" 
-										alt=""></a>
-									</div>
-									</article>
-
-									<!-- old ones
-									<div class="overflow-hidden">
-										<a href="Arc_de_Triomphe.jpg">
-										<img class="object-cover h-full transition duration-500 ease-in-out transform hover:scale-110" 
-										src="Arc_de_Triomphe.jpg" 
-										alt="" title="" /></a>
-									</div>
-									
-									<div class="overflow-hidden">
-										<a href="effel_tower.jpg">
-										<img class="object-cover h-full transition duration-500 ease-in-out transform hover:scale-110"
-										src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&w=1000&q=80"
-										alt="" title="" /></a>
-									</div>
-									<div class="overflow-hidden">
-										<a href="Louvre.jpg">
-										<img class="object-cover h-full transition duration-500 ease-in-out transform hover:scale-110" 
-										src="https://images.unsplash.com/photo-1499634231146-3393ed854a33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
-										alt="" title="" /></a>
-									</div>
-									<div class="overflow-hidden">
-										<a href="notre_dame.jpg">
-										<img class="object-cover h-full transition duration-500 ease-in-out transform hover:scale-110" 
-										src="https://images.unsplash.com/photo-1555397227-cbcbc55768de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
-										alt="" title="" /></a>
-									</div>
-									<div class="overflow-hidden">
-										<a href="opera.jpg">
-										<img class="object-cover h-full transition duration-500 ease-in-out transform hover:scale-110" 
-										src="https://images.unsplash.com/photo-1590101996999-e2df75f826d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
-										alt="" title="" /></a>
-									</div>
-									<div class="overflow-hidden">
-										<a href="sacre_coeur.jpg">
-										<img class="object-cover w-full transition duration-500 ease-in-out transform hover:scale-110" 
-										src="sacre_coeur.jpg" 
-										alt="" title="" /></a>
-									</div>
-									<div class="overflow-hidden">
-										<a href="jardin_louxembourg.jpg">
-										<img class="object-cover h-full transition duration-500 ease-in-out transform hover:scale-110" 
-										src="jardin_louxembourg.jpg" 
-										alt="" title="" /></a>
-									</div>
-									<div class="overflow-hidden">
-										<a href="versailles.jpg">
-										<img class="object-cover h-full transition duration-500 ease-in-out transform hover:scale-110" 
-										src="versailles.jpg" 
-										alt="" title="" /></a>
-									</div>
-									-->
-
-								</div>
-								<a href="/arc_de_triomphe" class="mt-10">
-									<button class="rounded bg-blue-600 hover:bg-blue-800 text-white text-xl p-3 pl-10 pr-10">Learn More</button>
-								</a>
 							</div>
 					</section>
+
+				<!-- Time -->
+					<section id="time" class="flex flex-col bg-gray-100 grid grid-cols-2 w-full smheight">
+
+						<!--photo-->
+							<div class="row-span-1 col-span-1 items-center">
+								<header class="h-20 p-3">
+									<p class="text-black text-2xl text-center font-semibold mt-4">Time</p>
+								</header>
+								
+								<p class="text-black px-10 text-xl font-semibold mt-2">OPEN TIME</p>
+								<p class="text-black px-10 mt-2">7:30 - 21:30 7/7</p>
+								<p class="text-black px-10 text-xl font-semibold mt-8">CLOSING TIMES</p>
+								<p class="text-black px-10 mt-2">check details by clicking here</p>
+                                <a class="mt-2" href="https://www.senat.fr/visite/jardin/horaires.html">timetable</a>
+							</div>
+							<div class="items-center row-span-1 col-span-1">
+								<img src="time2.jpg" class="w-full secheight" alt="time">
+							</div>
+							
+					</section>
+
+				<!-- Price -->
+					<section id="price" class="flex flex-col bg-gray-100 grid grid-cols-2 w-full secheight">
+
+						<!--photo-->
+							<div class="items-center row-span-1 col-span-1">
+								<img src="price.jpg" class="w-full h-full" alt="price">
+							</div>
+							<div class="row-span-1 col-span-1 items-center">
+								<header class="h-20 p-3">
+									<p class="text-black text-2xl text-center font-semibold mt-4">Price</p>
+								</header>
+								<div class="px-10 mt-2 space-y-2">
+									
+								
+									
+									<div class="flex-cols">
+										<div class="text-black text-left text-xl font-semibold">
+											<span>FREE ACCESS TO ALL PUBLIC</span>
+										</div>
+										
+									</div>
+									<div class="flex-cols">
+										<div class="text-black text-left text-xl font-semibold mt-8">
+											<span>GUIDED TOUR</span>
+										</div>
+										<p class="mt-2 ml-8 list-disc">Guided tours led by one of the park’s gardeners are generally available on the first Wednesday of the month from April to October. 
+											
+										</p>
+									</div>
+
+								</div>
+
+
+							</div>
+					</section>
+
+				<!-- Transportation -->
+					<section id="transportation" class="flex flex-col bg-gray-100 grid grid-cols-2 w-full secheight">
+
+						<!--photo-->
+							<div class="row-span-1 col-span-1 items-center">
+								<header class="h-20 p-3">
+									<p class="text-black text-2xl text-center font-semibold mt-4">Access</p>
+								</header>
+								<div class="px-10 mt-2 space-y-2">
+									<div class="flex">
+										<div id="address" class="w-2/5 text-black text-left">
+											<p class="text-xl font-semibold">ADDRESS</p>
+											<p class="font-normal mt-2">Jardin du Luxembourg</p>
+											<p class="font-normal">Rue de Médicis</p>
+											<p class="font-normal">75006 Paris</p>
+											<p class="text-xl font-semibold mt-8">CONTACT</p>
+											<p class="font-normal mt-2">Ph. : 33 / (0)1 42 64 33 99</p>
+											<p class="font-normal">Fax : 33 / (0)1 44 95 02 13</p>
+										</div>
+										<div id="way" class="w-3/5 text-black text-left pl-4 border-l-4 border-orange-700">
+											<p class="text-xl font-semibold">BY SUBWAY</p>
+											<p class="font-normal">lines 6, stop Rennes</p>
+											<p class="text-xl font-semibold mt-2">BY RER</p>
+											<p class="font-normal">line B, Luxembourg</p>
+											<p class="text-xl font-semibold mt-2">BY BUS</p>
+											<p class="font-normal">lines 21, 27, 31, 58, 82, 83, 84, and 89</p>
+											<p class="text-xl font-semibold mt-2">BY CAR</p>
+											<p class="font-normal">From suburb : take Avenue Denfert-Rochereau.From Paris downtown : take boulvard Saint-Michel</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="items-center row-span-1 col-span-1">
+								<img src="metro3.jpg" class="w-full h-full" alt="transportation">
+							</div>
+					</section>
+
 
 				<!-- Contact -->
 					<section id="contact" class="mt-5 grid grid-cols-2 h-64">
