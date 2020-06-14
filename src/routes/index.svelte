@@ -164,9 +164,9 @@
 									</article>
 
 									<article class="location-listing">
-									<a class="location-title" href="/">Opera</a>
+									<a class="location-title" href="/opera">Opera</a>
 									<div class="location-image">
-										<a href="/">
+										<a href="/opera">
 										<img class="object-cover mimg"
 										src="https://images.unsplash.com/photo-1590101996999-e2df75f826d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
 										alt=""></a>
