@@ -1,13 +1,20 @@
 <script>
     export let reply;
     export let id;
-    
+    let time;
     
     async function handleReply(event) {
         
         console.log(id);
         console.log(event.target.name.value);
-		console.log(event.target.message.value);
+        console.log(event.target.message.value);
+        time = Date(Date.now());
+
+        /*reply.push({"name": event.target.name.value,
+					"message":event.target.message.value,
+					"time":time});
+        */
+       
 		fetch("/submit-reply", {
 				method: "POST",
 				headers: {
@@ -20,12 +27,14 @@
                     "id": id,
 					"name": event.target.name.value,
 					"message":event.target.message.value,
-					"time":Date(Date.now())
+					"time":time
 				})
 				}).then( (response) => { 
 				//do something awesome that makes the world a better place
 				})
-				;
+                ;
+                
+                
 				}
 
 
@@ -48,7 +57,7 @@
 </a>
 
 <div class="{show?'':'hidden'}">
-    {#if reply}
+    
         <ul class="w-full p-5 space-y-2">
         {#each reply as {time, name, message}, i}
             <li>
@@ -72,7 +81,7 @@
         {/each}
         </ul>
 
-    {/if}
+    
 
 
     <form on:submit|preventDefault="{handleReply}" class="m-5">
