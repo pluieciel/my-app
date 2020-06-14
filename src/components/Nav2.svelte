@@ -65,7 +65,7 @@
     </div>
 </nav>
 
-<div class="{show2 ? 'block' : 'hidden'} flex w-full">
+<div class="{show2 && show ? 'block' : 'hidden'} flex w-full">
 
     <div class="flex flex-col fixed z-20 mt-10">
         <div class="flex flex-col bg-gray-800 bg-opacity-75 p-2 rounded ml-32">

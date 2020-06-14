@@ -25,17 +25,26 @@
 				.then( (response) => { 
 				//do something awesome that makes the world a better place
 				});
-    			}
+				}
+				let width;
 </script>
 
 <style>
 
 .fixheight{
 	height:500px;
+	width:1000px
 }
-
+.fixheight1{
+	height:1600px;
+	width:200px
+}
 .mimg{
 	height:250px;
+	width:auto;
+}
+.mimg1{
+	height:200px;
 	width:auto;
 }
 
@@ -92,7 +101,7 @@
 </svelte:head>
 
 
-
+<svelte:window bind:innerWidth={width}/>
 
 <body>
 	<div class="">
@@ -104,8 +113,8 @@
 					<div class="h-10"></div>
 					<section id="banner" class="flex flex-col justify-center items-center bg-black w-full h-64 pt-64 pb-64">
 						<div class="flex flex-col justify-center items-center">
-							<p class="text-white text-6xl">Welcome to Paris</p>
-							<p class="text-white text-xl">A website give you the best navigation. </p>
+							<p class="text-white  md:text-6xl text-3xl">Welcome to Paris</p>
+							<p class="text-white text-xl text-center">A website give you the best navigation. </p>
 							
 							<a href='/' on:click={() => animateScroll.scrollTo({element: '#sites', duration: 2000})} class="mt-10">
 								<CustomButton text="Continue"/>
@@ -121,140 +130,92 @@
 								<header class="h-20 p-3">
 									<p class="text-black text-3xl">Top 8</p>
 								</header>
-								<div class="fixheight grid grid-cols-4 grid-rows-2">
+								<div class="{width>767? 'fixheight':'fixheight1'}">
+									<div class="grid grid-cols-1 grid-rows-8 md:grid-cols-4 md:grid-rows-2 ">
 
-									<article class="location-listing">
-									<a class="location-title" href="/arc_de_triomphe">Arc de Triomphe</a>
-									<div class="location-image">
-										<a href="/arc_de_triomphe">
-										<img class="object-cover mimg"
-										src="Arc_de_Triomphe.jpg" 
-										alt=""></a>
-									</div>
-									</article>
+										<article class="location-listing">
+										<a class="location-title" href="/arc_de_triomphe">Arc de Triomphe</a>
+										<div class="location-image">
+											<a href="/arc_de_triomphe">
+											<img class="object-cover md:mimg mimg1"
+											src="Arc_de_Triomphe.jpg" 
+											alt=""></a>
+										</div>
+										</article>
 
-									<article class="location-listing">
-									<a class="location-title" href="/eiffel_tower">Eiffel Tower</a>
-									<div class="location-image">
-										<a href="/eiffel_tower">
-										<img class="object-cover mimg"
-										src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&w=1000&q=80" 
-										alt=""></a>
-									</div>
-									</article>
+										<article class="location-listing">
+										<a class="location-title" href="/eiffel_tower">Eiffel Tower</a>
+										<div class="location-image">
+											<a href="/eiffel_tower">
+											<img class="object-cover md:mimg mimg1"
+											src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&w=1000&q=80" 
+											alt=""></a>
+										</div>
+										</article>
 
-									<article class="location-listing">
-									<a class="location-title" href="/louvre">Louvre</a>
-									<div class="location-image">
-										<a href="/louvre">
-										<img class="object-cover mimg"
-										src="https://images.unsplash.com/photo-1499634231146-3393ed854a33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
-										alt=""></a>
-									</div>
-									</article>
+										<article class="location-listing">
+										<a class="location-title" href="/louvre">Louvre</a>
+										<div class="location-image">
+											<a href="/louvre">
+											<img class="object-cover md:mimg mimg1"
+											src="https://images.unsplash.com/photo-1499634231146-3393ed854a33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
+											alt=""></a>
+										</div>
+										</article>
 
-									<article class="location-listing">
-									<a class="location-title" href="/notre_dame">Notre Dame</a>
-									<div class="location-image">
-										<a href="/notre_dame">
-										<img class="object-cover mimg"
-										src="https://images.unsplash.com/photo-1555397227-cbcbc55768de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
-										alt=""></a>
-									</div>
-									</article>
+										<article class="location-listing">
+										<a class="location-title" href="/notre_dame">Notre Dame</a>
+										<div class="location-image">
+											<a href="/notre_dame">
+											<img class="object-cover md:mimg mimg1"
+											src="https://images.unsplash.com/photo-1555397227-cbcbc55768de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
+											alt=""></a>
+										</div>
+										</article>
 
-									<article class="location-listing">
-									<a class="location-title" href="/opera">Opera</a>
-									<div class="location-image">
-										<a href="/opera">
-										<img class="object-cover mimg"
-										src="https://images.unsplash.com/photo-1590101996999-e2df75f826d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
-										alt=""></a>
-									</div>
-									</article>
+										<article class="location-listing">
+										<a class="location-title" href="/opera">Opera</a>
+										<div class="location-image">
+											<a href="/opera">
+											<img class="object-cover md:mimg mimg1"
+											src="https://images.unsplash.com/photo-1590101996999-e2df75f826d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
+											alt=""></a>
+										</div>
+										</article>
 
-									<article class="location-listing">
-									<a class="location-title" href="/sacre_coeur">Sacre Coeur</a>
-									<div class="location-image">
-										<a href="/sacre_coeur">
-										<img class="object-cover mimg"
-										src="https://images.unsplash.com/photo-1568464864774-276f00277a4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
-										alt=""></a>
-									</div>
-									</article>
+										<article class="location-listing">
+										<a class="location-title" href="/sacre_coeur">Sacre Coeur</a>
+										<div class="location-image">
+											<a href="/sacre_coeur">
+											<img class="object-cover md:mimg mimg1"
+											src="https://images.unsplash.com/photo-1568464864774-276f00277a4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
+											alt=""></a>
+										</div>
+										</article>
 
-									<article class="location-listing">
-									<a class="location-title" href="/Jardin_Luxembourg">Jardin Louxembourg</a>
-									<div class="location-image">
-										<a href="/Jardin_Luxembourg">
-										<img class="object-cover mimg"
-										src="jardin_louxembourg.jpg" 
-										alt=""></a>
-									</div>
-									</article>
+										<article class="location-listing">
+										<a class="location-title text-center" href="/Jardin_Luxembourg">Jardin Louxembourg</a>
+										<div class="location-image">
+											<a href="/Jardin_Luxembourg">
+											<img class="object-cover md:mimg mimg1"
+											src="jardin_louxembourg.jpg" 
+											alt=""></a>
+										</div>
+										</article>
 
-									<article class="location-listing">
-									<a class="location-title" href="/Versailles">Versailles</a>
-									<div class="location-image">
-										<a href="/">
-										<img class="object-cover mimg"
-										src="versailles.jpg" 
-										alt=""></a>
-									</div>
-									</article>
+										<article class="location-listing">
+										<a class="location-title" href="/Versailles">Versailles</a>
+										<div class="location-image">
+											<a href="/">
+											<img class="object-cover md:mimg mimg1"
+											src="versailles.jpg" 
+											alt=""></a>
+										</div>
+										</article>
 
-									<!-- old ones
-									<div class="overflow-hidden">
-										<a href="Arc_de_Triomphe.jpg">
-										<img class="object-cover h-full transition duration-500 ease-in-out transform hover:scale-110" 
-										src="Arc_de_Triomphe.jpg" 
-										alt="" title="" /></a>
-									</div>
-									
-									<div class="overflow-hidden">
-										<a href="effel_tower.jpg">
-										<img class="object-cover h-full transition duration-500 ease-in-out transform hover:scale-110"
-										src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&w=1000&q=80"
-										alt="" title="" /></a>
-									</div>
-									<div class="overflow-hidden">
-										<a href="Louvre.jpg">
-										<img class="object-cover h-full transition duration-500 ease-in-out transform hover:scale-110" 
-										src="https://images.unsplash.com/photo-1499634231146-3393ed854a33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
-										alt="" title="" /></a>
-									</div>
-									<div class="overflow-hidden">
-										<a href="notre_dame.jpg">
-										<img class="object-cover h-full transition duration-500 ease-in-out transform hover:scale-110" 
-										src="https://images.unsplash.com/photo-1555397227-cbcbc55768de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
-										alt="" title="" /></a>
-									</div>
-									<div class="overflow-hidden">
-										<a href="opera.jpg">
-										<img class="object-cover h-full transition duration-500 ease-in-out transform hover:scale-110" 
-										src="https://images.unsplash.com/photo-1590101996999-e2df75f826d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
-										alt="" title="" /></a>
-									</div>
-									<div class="overflow-hidden">
-										<a href="sacre_coeur.jpg">
-										<img class="object-cover w-full transition duration-500 ease-in-out transform hover:scale-110" 
-										src="sacre_coeur.jpg" 
-										alt="" title="" /></a>
-									</div>
-									<div class="overflow-hidden">
-										<a href="jardin_louxembourg.jpg">
-										<img class="object-cover h-full transition duration-500 ease-in-out transform hover:scale-110" 
-										src="jardin_louxembourg.jpg" 
-										alt="" title="" /></a>
-									</div>
-									<div class="overflow-hidden">
-										<a href="versailles.jpg">
-										<img class="object-cover h-full transition duration-500 ease-in-out transform hover:scale-110" 
-										src="versailles.jpg" 
-										alt="" title="" /></a>
-									</div>
-									-->
+										
 
+									</div>
 								</div>
 								<a href="/arc_de_triomphe" class="mt-10">
 									<button class="rounded bg-blue-600 hover:bg-blue-800 text-white text-xl p-3 pl-10 pr-10">Learn More</button>
@@ -263,9 +224,9 @@
 					</section>
 
 				<!-- Contact -->
-					<section id="contact" class="mt-5 grid grid-cols-2 h-64">
+					<section id="contact" class="mt-5 grid md:grid-cols-2 grid-cols-1 h-64">
 						<!-- Social -->
-							<div class="flex flex-col bg-gray-300 p-10 text-gray-900">
+							<div class="flex flex-col bg-gray-300 p-10 text-gray-900 md:row-start-1 row-start-2">
 								<p class="font-bold text-xl mb-3">About Us</p>
 								<div class='space-y-2'>
 									<p>We are 4 ESSEC students.</p>
@@ -312,7 +273,7 @@
 							</div>
 
 						<!-- Form -->
-							<div class="bg-gray-200 p-10 text-gray-900">
+							<div class="bg-gray-200 p-10 text-gray-900 row-start-1">
 								<p class="font-bold text-xl mb-3">Get in Touch</p>
 								<!--on:submit|preventDefault="{handleSubmit}" action="submit-form" method="POST"--> 
 								<form on:submit|preventDefault="{handleSubmit}" class="grid grid-cols-2 gap-4">
@@ -329,7 +290,7 @@
 									<div class="flex flex-col col-span-2">
 										<label for="message"  class="font-bold mb-3">Message</label>
 										<textarea name="message" id="message" rows="6" placeholder=" Message"
-										    class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"></textarea>
+										    class="md:h-24 h-16 shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"></textarea>
 									</div>
 									<ul class="actions">
 										<li><input value="Send Message" 
