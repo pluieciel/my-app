@@ -65,6 +65,8 @@ on:mouseleave={handleMouseleave}>
             <a href="/notre_dame" class="font-medium text-gray-300 text-sm m-2 hover:opacity-25">Notre Dame</a>
             <a href="/opera" class="font-medium text-gray-300 text-sm m-2 hover:opacity-25">Opera</a>
             <a href="/sacre_coeur" class="font-medium text-gray-300 text-sm m-2 hover:opacity-25">Sacre Coeur</a>
+            <a href="/Jardin_Luxembourg" class="font-medium text-gray-300 text-sm m-2 hover:opacity-25">Jardin Luxembourg</a>
+            <a href="/Versailles" class="font-medium text-gray-300 text-sm m-2 hover:opacity-25">Versailles</a>
         </div>
     </div>
 </div>
