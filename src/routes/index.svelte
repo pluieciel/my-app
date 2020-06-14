@@ -184,7 +184,7 @@
 									</article>
 
 									<article class="location-listing">
-									<a class="location-title" href="/">Jardin Louxembourg</a>
+									<a class="location-title" href="/Jardin_Luxembourg">Jardin Louxembourg</a>
 									<div class="location-image">
 										<a href="/Jardin_Luxembourg">
 										<img class="object-cover mimg"
@@ -194,7 +194,7 @@
 									</article>
 
 									<article class="location-listing">
-									<a class="location-title" href="/">Versailles</a>
+									<a class="location-title" href="/Versailles">Versailles</a>
 									<div class="location-image">
 										<a href="/">
 										<img class="object-cover mimg"
