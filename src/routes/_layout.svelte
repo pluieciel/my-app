@@ -1,6 +1,6 @@
 <script>
 	import Nav1 from '../components/Nav1.svelte';
-
+	import Nav2 from '../components/Nav2.svelte';
 	//export let segment;
 	
 	let yy;
@@ -20,7 +20,13 @@
 
 <svelte:window bind:scrollY={yy}/>
 
-<Nav1 y = {yy}/>
+<div class="md:block hidden">
+	<Nav1 y = {yy}/>
+</div>
+
+<div class="md:hidden block">
+	<Nav2/>
+</div>
 
 <main>
 	<slot></slot>

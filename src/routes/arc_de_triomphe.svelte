@@ -112,13 +112,13 @@
 			<section id="main" class="flex flex-col">
 
 				<!-- Banner -->
-					<header class=" bg-cover border-t-2 border-blue-600 bgheight" style="background-image: 
+					<header class=" bg-cover border-t-2 border-blue-600 md:bgheight" style="background-image: 
 					url('https://images.unsplash.com/photo-1496546591938-b3e0375d6d1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1058&q=80.jpg');">
-						<div class="body mt-64 mx-64">
+						<div class="body md:mt-64 mt-24 md:mx-64 mx-4 md:mb-40 mb-24">
 							<div class="md:flex items-center justify-center">
                     			<div class="w-full" style="text-shadow: 0 20px 50px hsla(0,0%,0%,8);">
-                        			<h1 class="text-6xl font-bold text-white text-center">Arc de Triomphe</h1>
-									<h2 class="text-3xl font-bold text-white text-center">The Symbol of France</h2>
+                        			<h1 class="md:text-6xl text-3xl font-bold text-white text-center">Arc de Triomphe</h1>
+									<h2 class="md:text-3xl text-lg font-bold text-white text-center">The Symbol of France</h2>
 					            </div>
                             </div>
 						</div>
@@ -127,25 +127,25 @@
 				
 
 				<!-- Introduction -->
-					<section id="introduction" class="flex flex-col bg-gray-100 grid grid-cols-2 w-full secheight">
+					<section id="introduction" class="flex flex-col bg-gray-100 grid md:grid-cols-2 grid-cols-1 w-full md:secheight h-auto">
 
 						<!--photo-->
-							<div class="items-center row-span-1 col-span-1">
+							<div class="items-center row-span-1 col-span-1 row-start-1">
 								<img src="introduction3.jpg" class="w-full secheight" alt="intorduction">
 							</div>
-							<div class="row-span-1 col-span-1 items-center">
+							<div class="row-span-1 col-span-1 items-center md:mb-0 mb-8 md:row-start-1 row-start-2">
 								<header class="h-20 p-3">
-									<p class="text-black text-2xl text-center font-semibold mt-4">Introduction</p>
+									<p class="text-black text-2xl text-center font-semibold mt-2">Introduction</p>
 								</header>
 								<p class="text-black text-center px-10">
                                 	Stand on th top of the panoramic terrace and sweep over the whole of Paris.
                         		</p>
 
-								<p class="text-black text-center px-10 mt-8">
+								<p class="text-black text-center px-10 md:mt-8 mt-4">
                                 	Inspired by the Roman Arch of Titus in a single arch, Architect Jean-François Chalgrin made the construction went beyond it by exceptional dimensions (about 50 m high, 45 m long and 22 m wide) and abandoning columns. 
                         		</p>
 
-								<p class="text-black text-center px-10 mt-8">
+								<p class="text-black text-center px-10 md:mt-8 mt-4">
                                 	Ordered by Napoleon in 1806, the Arc de Triomphe was completed in 1836 by French king, Louis-Philippe, who dedicated it to the armies of the Revolution and the Empire. The Unknown Soldier was buried at the base of the arch in 1921. The flame of remembrance is rekindled every day at 18:30. 
                         		</p>
 
@@ -153,39 +153,38 @@
 					</section>
 
 				<!-- Time -->
-					<section id="time" class="flex flex-col bg-gray-100 grid grid-cols-2 w-full smheight">
+					<section id="time" class="flex flex-col bg-gray-100 grid md:grid-cols-2 grid-cols-1 w-full md:smheight h-auto">
 
-						<!--photo-->
-							<div class="row-span-1 col-span-1 items-center">
+							<div class="row-span-1 col-span-1 items-center md:row-start-1 row-start-2">
 								<header class="h-20 p-3">
 									<p class="text-black text-2xl text-center font-semibold mt-4">Time</p>
 								</header>
-								
 								<p class="text-black px-10 text-xl font-semibold mt-2">CLOSING DAYS</p>
 								<p class="text-black px-10 mt-2">1 January, 1 May, 8May (morning), 14 July, 11 November (morning) and 25 December</p>
 								<p class="text-black px-10 text-xl font-semibold mt-8">OPENING TIMES</p>
-								<p class="text-black px-10 mt-2">24h, 7j/7</p>
-
+								<p class="text-black px-10 mt-2 mt:mb-0 mb-8">24h, 7j/7</p>
 								
 							</div>
-							<div class="items-center row-span-1 col-span-1">
-								<img src="time2.jpg" class="w-full secheight" alt="time">
+
+							<!--photo-->
+							<div class="items-center row-span-1 col-span-1 row-start-1">
+								<img src="time2.jpg" class="w-full md:secheight h-full" alt="time">
 							</div>
 							
 					</section>
 
 				<!-- Price -->
-					<section id="price" class="flex flex-col bg-gray-100 grid grid-cols-2 w-full secheight">
+					<section id="price" class="flex flex-col bg-gray-100 grid md:grid-cols-2 grid-cols-1 w-full md:secheight h-auto">
 
 						<!--photo-->
-							<div class="items-center row-span-1 col-span-1">
+							<div class="items-center row-span-1 col-span-1 row-start-1">
 								<img src="price.jpg" class="w-full h-full" alt="price">
 							</div>
-							<div class="row-span-1 col-span-1 items-center">
+							<div class="row-span-1 col-span-1 items-center md:row-start-1 row-start-2">
 								<header class="h-20 p-3">
 									<p class="text-black text-2xl text-center font-semibold mt-4">Price</p>
 								</header>
-								<div class="px-10 mt-2 space-y-2">
+								<div class="px-10 mt-2 space-y-2 md:mb-0 mb-4">
 									<div class="flex">
 										<div class="w-1/2 text-black text-left text-xl font-semibold">
 											<span>INDIVIDUAL</span>
@@ -231,10 +230,9 @@
 					</section>
 
 				<!-- Transportation -->
-					<section id="transportation" class="flex flex-col bg-gray-100 grid grid-cols-2 w-full secheight">
+					<section id="transportation" class="flex flex-col bg-gray-100 grid md:grid-cols-2 grid-cols-1 w-full md:secheight h-auto">
 
-						<!--photo-->
-							<div class="row-span-1 col-span-1 items-center">
+							<div class="row-span-1 col-span-1 items-center md:row-start-1 row-start-2">
 								<header class="h-20 p-3">
 									<p class="text-black text-2xl text-center font-semibold mt-4">Access</p>
 								</header>
@@ -262,16 +260,18 @@
 									</div>
 								</div>
 							</div>
-							<div class="items-center row-span-1 col-span-1">
-								<img src="metro3.jpg" class="w-full h-full" alt="transportation">
+
+						<!--photo-->
+							<div class="items-center row-span-1 col-span-1 row-start-1">
+								<img src="metro3.jpg" class="w-full md:secheight h-full" alt="transportation">
 							</div>
 					</section>
 
 
 				<!-- Contact -->
-					<section id="contact" class="mt-5 grid grid-cols-2 h-64">
+					<section id="contact" class="mt-5 grid md:grid-cols-2 grid-cols-1 h-64">
 						<!-- Social -->
-							<div class="flex flex-col bg-gray-300 p-10 text-gray-900">
+							<div class="flex flex-col bg-gray-300 p-10 text-gray-900 md:row-start-1 row-start-2">
 								<p class="font-bold text-xl mb-3">About Us</p>
 								<div class='space-y-2'>
 									<p>We are 4 ESSEC students.</p>
@@ -318,7 +318,7 @@
 							</div>
 
 						<!-- Form -->
-							<div class="bg-gray-200 p-10 text-gray-900">
+							<div class="bg-gray-200 p-10 text-gray-900 row-start-1">
 								<p class="font-bold text-xl mb-3">Get in Touch</p>
 								<!--on:submit|preventDefault="{handleSubmit}" action="submit-form" method="POST"--> 
 								<form on:submit|preventDefault="{handleSubmit}" class="grid grid-cols-2 gap-4">

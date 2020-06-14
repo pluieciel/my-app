@@ -34,13 +34,26 @@ client.connect(err => {
 	app.post('/submit-form', (req, res) => {
 		let data = req.body;
 		collection.insertOne(data, function(err, res) {
-				if (err) throw err;
+				if (err) console.log(err);
 				console.log("1 document inserted");});
 		res.end()
 	});
 
-	app.get("/test", (req, res) => {console.log("222");
-		res.send("hhhhh");
+	app.post('/submit-reply', (req, res) => {
+		let data = req.body;
+		collection.updateOne(
+			{_id:mongodb.ObjectId(data.id)},
+			{
+			  $push: {
+				"reply": { name: data.name, time: data.time, message: data.message }
+			  }
+			}
+			, function(err, res) {
+				if (err) console.log(err);
+				console.log("1 document updated");}
+		 )
+		 ;
+		res.end()
 	});
 
 	app.get('/messagedata',function (req,res) {
@@ -48,7 +61,7 @@ client.connect(err => {
 			//console.log(err,docs);
 			str = docs;
 			res.send(str);
-			client.close();
+			
 		});
 		});
 	
