@@ -5,16 +5,15 @@
     
     async function handleReply(event) {
         
-        console.log(id);
-        console.log(event.target.name.value);
-        console.log(event.target.message.value);
+        
         time = Date(Date.now());
-
-        /*reply.push({"name": event.target.name.value,
+        reply.push({
+					"name": event.target.name.value,
 					"message":event.target.message.value,
-					"time":time});
-        */
-       
+					"time":time
+                });
+        
+        reply = reply;
 		fetch("/submit-reply", {
 				method: "POST",
 				headers: {
@@ -59,7 +58,7 @@
 <div class="{show?'':'hidden'}">
     
         <ul class="w-full p-5 space-y-2">
-        {#each reply as {time, name, message}, i}
+        {#each reply as {time, name, message}}
             <li>
                 <div class="border-solid border-2 border-gray-600 rounded bg-white p-1">
                     {name? name:"Somebody"}: 

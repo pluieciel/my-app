@@ -1,6 +1,32 @@
 <script>
 	import * as animateScroll from "svelte-scrollto";
+	
+	
+	async function handleSubmit(event) {
+        
+        console.log(event.target.name.value);
+        console.log(event.target.email.value);
+		console.log(event.target.message.value);
+		fetch("/submit-form", {
+				method: "POST",
+				headers: {
+					
+					'Content-Type': 'application/json'
+				},
 
+				//make sure to serialize your JSON body
+				body: JSON.stringify({
+					"name": event.target.name.value,
+					"email": event.target.email.value,
+					"message":event.target.message.value,
+					"time":Date(Date.now()),
+					"reply":new Array()
+				})
+				})
+				.then( (response) => { 
+				//do something awesome that makes the world a better place
+				});
+    			}
 </script>
 
 <style>
@@ -191,7 +217,7 @@
 						<!-- Form -->
 							<div class="bg-gray-200 p-10 text-gray-900">
 								<p class="font-bold text-xl mb-3">Get in Touch</p>
-								<form action="#" method="post" class="grid grid-cols-2 gap-4">
+								<form on:submit|preventDefault="{handleSubmit}" class="grid grid-cols-2 gap-4">
 									<div class="flex flex-col">
 										<label for="name" class="font-bold mb-3">Name</label>
 										<input name="name" id="name" type="text" placeholder=" Name"
