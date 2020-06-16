@@ -45,6 +45,24 @@
 	width:auto;
 }
 
+.google-maps {
+        position: relative;
+        padding-bottom: 65%;
+        height: 0;
+        overflow: hidden;
+    }
+.google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+		padding: 1rem;
+        width: 100% !important;
+        height: 100% !important;
+		max-height: 524px;
+		min-height: 100px;
+    }
+
+
 /* hover styles */
 .location-listing {
   position: relative;
@@ -107,29 +125,29 @@
 					<div class="h-10"></div>
 					<section id="banner" class="flex flex-col justify-center items-center bg-black w-full h-64 pt-64 pb-64">
 						<div class="mt-24 flex flex-col justify-center items-center">
-							<p class="text-white text-6xl">Explore the Beauty of Paris</p>
-							<p class="text-white text-xl">The best choices for your traveling </p>
+							<p class="text-white md:mx-0 mx-4 text-center md:text-6xl text-3xl">Explore the Beauty of Paris</p>
+							<p class="text-white text-center text-xl">The best choices for your traveling </p>
 						</div>
-						<ul class="mt-10 buttom-0 flex space-x-12 justify-center items-center">
+						<ul class="mt-10 buttom-0 flex md:space-x-12 space-x-2 justify-center items-center">
 							<div class="container relative justify-center items-center">
-								<button type="button" class="absolute mt-16 mx-10 bg-white text-black rounded-sm hover:bg-white bg-white bg-opacity-75 py-1 inline-block items-center w-20 focus:shadow-outline focus:outline-none">
+								<button type="button" class="absolute md:mt-16 mt-12 md:mx-10 mx-6 bg-white text-black rounded-sm hover:bg-white bg-white bg-opacity-75 py-1 inline-block items-center w-20 focus:shadow-outline focus:outline-none">
 									<a class="text-xl" on:click={() => animateScroll.scrollTo({element: '#map', duration: 2000})}>Map</a>
 								</button>								
-								<img src="map2.jpg" class="rounded-full h-40 w-40 buttom-0 border-solid border-white border-8">
+								<img src="map2.jpg" class="rounded-full md:h-40 h-32 md:w-40 h-32 buttom-0 border-solid border-white border-8">
 							    
 							</div>
 							<div class="container relative justify-center items-center">
-								<button type="button" class="absolute mt-16 mx-10 bg-white text-black rounded-sm hover:bg-white bg-white bg-opacity-75 py-1 inline-block items-center w-20 focus:shadow-outline focus:outline-none">
+								<button type="button" class="absolute md:mt-16 mt-12 md:mx-10 mx-6 bg-white text-black rounded-sm hover:bg-white bg-white bg-opacity-75 py-1 inline-block items-center w-20 focus:shadow-outline focus:outline-none">
 						        	<a class="text-xl" href="https://www.ratp.fr/en/plan-metro">Metro</a>
 								</button>
-								<img src="metro.jpg" class="rounded-full border-solid border-white border-8 h-40 w-40 buttom-0">	
+								<img src="metro.jpg" class="rounded-full border-solid border-white border-8 md:h-40 h-32 md:w-40 h-32 buttom-0">	
 	
 							</div>
 							<div class="container relative justify-center items-center">
-								<button type="button" class="absolute mt-16 mx-10 bg-white text-black rounded-sm hover:bg-white bg-white bg-opacity-75 py-1 inline-block items-center w-20 focus:shadow-outline focus:outline-none">
+								<button type="button" class="absolute md:mt-16 mt-12 md:mx-10 mx-6 bg-white text-black rounded-sm hover:bg-white bg-white bg-opacity-75 py-1 inline-block items-center w-20 focus:shadow-outline focus:outline-none">
 						        	<a class="text-xl" href="https://www.komoot.com/guide/1525177/road-cycling-routes-around-paris">Bike</a>
 								</button>								
-								<img src="bike.jpg" class="rounded-full border-solid border-white border-8 h-40 w-40 buttom-0">		
+								<img src="bike.jpg" class="rounded-full border-solid border-white border-8 md:h-40 h-32 md:w-40 h-32 buttom-0">		
 							</div>
 
 						</ul>
@@ -144,17 +162,17 @@
 								<header class="h-20 p-3">
 									<p class="text-black text-3xl">Map</p>
 								</header>
-								<div class="fixheight grid grid-rows-1 grid-cols-3">
-									<div class="row-span-1 col-span-2 bg-white p-4">
+								<div class="md:fixheight h-auto grid grid-rows-1 grid-cols-2 md:grid-rows-1 md:grid-cols-3">
+									<div class="row-span-1 col-span-2 bg-white p-4 row-start-1 google-maps">
 										<iframe src="https://www.google.com/maps/d/u/1/embed?mid=1nG_RSsx9qPV6amD6QXXoi4IZi-rQAjqH" width="800" height="486"></iframe>
 									</div>
 
-									<div class="row-span-1 col-span-1 bg-white items-center">
-										<p class="ml-4 mt-16 text-center text-2xl font-semibold">Top 1 City in the World</p>
+									<div class="row-span-1 md:col-span-1 col-span-2 bg-white items-center md:row-start-1 row-start-2">
+										<p class="ml-4 md:mt-16 mt-4 text-center text-2xl font-semibold">Top 1 City in the World</p>
 									    <p class="ml-4 mt-8 text-center text-xl font-medium">18 zones</p>
 										<p class="ml-4 mt-8 text-center text-xl font-medium">More than 2 million people</p>
 										<p class="ml-12 mr-8 mt-8 text-center text-base">Check out the main monuments, museums, squares, churches and attractions in our map of Paris.</p>
-										<p class="ml-12 mt-4 mr-8 text-center text-base">Click on each icon to see what it is.</p>
+										<p class="ml-12 mt-4 mr-8 md:mb-0 mb-4 text-center text-base">Click on each icon to see what it is.</p>
 
 									</div>
 
@@ -166,9 +184,9 @@
 					</section>
 
 				<!-- Contact -->
-					<section id="contact2" class="mt-5 grid grid-cols-2 h-64">
+					<section id="contact2" class="mt-5 grid md:grid-cols-2 grid-cols-1 h-64">
 						<!-- Social -->
-							<div class="flex flex-col bg-gray-300 p-10 text-gray-900">
+							<div class="flex flex-col bg-gray-300 p-10 text-gray-900 md:row-start-1 row-start-2">
 								<p class="font-bold text-xl mb-3">About Us</p>
 								<div class='space-y-2'>
 									<p>We are 4 ESSEC students.</p>
@@ -215,7 +233,7 @@
 							</div>
 
 						<!-- Form -->
-							<div class="bg-gray-200 p-10 text-gray-900">
+							<div class="bg-gray-200 p-10 text-gray-900 row-start-1">
 								<p class="font-bold text-xl mb-3">Get in Touch</p>
 								<form on:submit|preventDefault="{handleSubmit}" class="grid grid-cols-2 gap-4">
 									<div class="flex flex-col">
